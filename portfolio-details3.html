@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saheli — AI-Powered Women's Safety Platform | Sumit Kolpe</title>
+  <meta name="description" content="Saheli: AI-driven women's safety app using real-time voice detection, proximity alerts, and police dashboards." />
+  <meta name="keywords" content="Saheli, Women's Safety, AI, Voice Recognition, SOS, Python, Portfolio" />
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet" />
+
+  <style>
+  /* Page-specific polish */
+  .page-title.dark-background {
+    padding: 24px 0;
+    background: #0f1724;
+    color: #fff;
+  }
+
+  .page-title .breadcrumbs a {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .project-card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 0;
+  }
+
+  /* Responsive, adaptive image height */
+  .project-hero {
+    width: 100%;
+    height: 70vh; /* takes 70% of viewport height for responsiveness */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .project-hero:hover {
+    transform: scale(1.02); /* smooth zoom on hover */
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+  }
+
+  .action-toolbar {
+    right: 16px;
+    top: 16px;
+    z-index: 10;
+  }
+
+  .floating-actions {
+    position: fixed;
+    right: 18px;
+    bottom: 24px;
+    z-index: 1200;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
+  .floating-actions .btn {
+    min-width: 190px;
+    white-space: nowrap;
+  }
+
+  .section .card-body h5 {
+    margin-top: 0.5rem;
+  }
+
+  /* Adjust heights for smaller screens */
+  @media (max-width: 992px) {
+    .project-hero {
+      height: 50vh; /* use 50% of screen height on medium screens */
+    }
+  }
+
+  @media (max-width: 576px) {
+    .project-hero {
+      height: 40vh; /* smaller but still proportional on mobile */
+    }
+
+    .floating-actions .btn {
+      min-width: 150px;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Technical detail list spacing */
+  .tech-list li {
+    margin-bottom: 0.5rem;
+  }
+</style>
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <!-- Header -->
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="Profile Image" class="img-fluid rounded-circle">
+    </div>
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Sumit Kolpe</h1>
+    </a>
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/sumitkolpe1008/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://wa.me/qr/C22YNP55MTIWJ1" class="Whatsapp"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://www.instagram.com/sumitkolpe1008/" class="instagram"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-folder navicon"></i> Projects</a></li>
+        <li><a href="index.html#internships"><i class="bi bi-briefcase navicon"></i> Internships</a></li>
+        <li><a href="index.html#patent"><i class="bi bi-award navicon"></i> Patent</a></li>
+        <li><a href="index.html#services"><i class="bi bi-trophy navicon"></i> Achievements</a></li>
+        <li><a href="index.html#certificate"><i class="bi bi-patch-check-fill navicon"></i> Certifications</a></li>
+        <li><a href="index.html#leadership"><i class="bi bi-people-fill navicon"></i> Leadership</a></li>
+        <li><a href="index.html#testimonials"><i class="bi bi-chat-text navicon"></i> Testimonials</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center position-relative">
+        <div>
+          <h1 class="mb-2 mb-lg-0">Saheli — AI-Powered Women's Safety Platform</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#portfolio">Projects</a></li>
+              <li class="current">Saheli</li>
+            </ol>
+          </nav>
+        </div>
+
+        <!-- Top Toolbar -->
+        <div class="action-toolbar position-absolute d-flex gap-2" style="right:0;">
+          <a href="#" id="topViewDemo" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalVideo"><i class="bi bi-play-btn me-1"></i> View demo video</a>
+          <a href="assets/docs/Saheli_PitchDeck.pptx" class="btn btn-light btn-sm" download><i class="bi bi-file-earmark-ppt me-1"></i> Download presentation</a>
+          <a href="assets/docs/Saheli_Doc.pdf" class="btn btn-light btn-sm" download><i class="bi bi-file-earmark-text me-1"></i> Download project document</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Details -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+
+         <div class="row gy-4">
+          <!-- Slider / Hero -->
+          <div class="col-lg-8">
+            <div class="card project-card">
+              <div class="p-0">
+                <div class="portfolio-details-slider swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/saheli-1.jpg" alt="FitMantra - demo" class="project-hero">
+                    </div>
+                    
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Details -->
+          <div class="col-lg-4">
+            <div class="card h-100 shadow-sm" style="border-radius:12px;">
+              <div class="card-body">
+                <h3 class="card-title">Project Overview</h3>
+                <p class="text-muted">Saheli is an AI-driven safety app for women that detects distress, sends instant alerts, and shares real-time location with emergency contacts and authorities. Designed for discreet activation and rapid response.</p>
+
+                <h5 class="mt-3">Key Features</h5>
+                <ul class="tech-list">
+                  <li><strong>Voice-Activated SOS:</strong> Detects the keyword and triggers emergency alerts without physical phone interaction.</li>
+                  <li><strong>Proximity-Based Alerts:</strong> Notifies nearest contacts based on geolocation to maximize response speed.</li>
+                  <li><strong>Fake Shutdown & Call:</strong> Disguises the device while critical functions run in the background for safety.</li>
+                  <li><strong>Police Dashboard:</strong> Real-time incident dashboard for authorities with mapping and alert management.</li>
+                </ul>
+
+                <h5 class="mt-3">Technologies</h5>
+                <p>Python, JavaScript, Google Maps API, Twilio, Cloud Backend, Mobile (Flutter)</p>
+
+                <h5 class="mt-3">Outcome</h5>
+                <p>Improved response time and better situational awareness for emergency services; recognized at multiple hackathons for real-world impact.</p>
+
+                <div class="mt-4 d-grid gap-2">
+                  <a href="https://saheli-ai.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Live Website</a>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed Info & Technical Sections -->
+        <div class="row mt-60">
+          <div class="col-lg-8">
+            <div class="card shadow-sm" style="border-radius:12px;">
+              <div class="card-body">
+                <h4>Technical Summary</h4>
+                <p>Saheli integrates machine learning-based voice detection with geolocation and cloud analytics to create an end-to-end safety system. It prioritizes discreet activation, low-latency alerting, and privacy-preserving data handling.</p>
+
+                <h5 class="mt-3">System Architecture</h5>
+                <ol>
+                  <li>Local audio capture → Lightweight keyword detection model → Trigger event</li>
+                  <li>Event → Location fetch → Alert composition (contacts + police)</li>
+                  <li>Server-side ingestion → Dashboard visualization & alert escalation</li>
+                </ol>
+
+                <h5 class="mt-3">Implementation Notes</h5>
+                <ul>
+                  <li>Keyword detection uses an amplitude + spectral feature based ML classifier tuned for low false positives.</li>
+                  <li>Fake-shutdown preserves background service via foreground service pattern (Android) and periodic heartbeats to server.</li>
+                  <li>Proximity is calculated using Haversine formula on contact coordinates, filtering contacts by distance and availability.</li>
+                </ul>
+
+                <h5 class="mt-3">Results & Metrics</h5>
+                <ul>
+                  <li>Successful keyword detection rate (controlled tests): <strong>~92%</strong></li>
+                  <li>Average alert dispatch latency: <strong>&lt; 6 seconds</strong></li>
+                  <li>Pilot user adherence and satisfaction showed measurable improvement across trials.</li>
+                </ul>
+
+                <h5 class="mt-3">Downloads & Resources</h5>
+                <ul>
+                  <li><a href="assets/docs/Saheli_PitchDeck.pptx" download>Presentation (PDF)</a></li>
+                  <li><a href="assets/docs/Saheli_Doc.pdf" download>Project Document (PDF)</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side column: quick facts / timeline / awards -->
+          <div class="col-lg-4">
+            <div class="card shadow-sm" style="border-radius:12px;">
+              <div class="card-body">
+                <h5>Quick Facts</h5>
+                <ul>
+                  <li><strong>Scope:</strong> Mobile & Cloud</li>
+                  <li><strong>Team Size:</strong> 3</li>
+                  <li><strong>Duration:</strong> 4 months</li>
+                </ul>
+
+                <h5 class="mt-3">Awards</h5>
+                <ul>
+                  <li>3rd Rank — National Level Hackathon</li>
+                  <li>2nd Rank — State Level Hackathon</li>
+                </ul>
+
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Floating action buttons -->
+    <div class="floating-actions">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVideo"><i class="bi bi-play-btn me-1"></i> View demo video</button>
+      <a href="assets/docs/Saheli_PitchDeck.pptx" class="btn btn-success" download><i class="bi bi-file-earmark-ppt me-1"></i> Download presentation</a>
+      <a href="assets/docs/Saheli_Doc.pdf" class="btn btn-success" download><i class="bi bi-file-earmark-text me-1"></i> Download project document</a>
+    </div>
+
+  </main>
+
+  <!-- Video Modal (lazy load: only plays when opened) -->
+<div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl"><!-- modal-xl for bigger viewing -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalVideoLabel">FitMantra — Demo Video</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-0">
+        <!-- responsive aspect ratio container -->
+        <div class="ratio ratio-16x9" style="max-height:85vh;">
+          <!-- NOTE: data-src is the Drive *embed/preview* URL (do NOT use the /view URL) -->
+          <iframe
+            id="demoVideoFrame"
+            data-src="https://drive.google.com/file/d/19HPYSF5UyxATqFga_wLkrW0dJuasNNH-/preview"
+            title="Saheli Demo Video"
+            allow="autoplay; encrypted-media; fullscreen"
+            allowfullscreen
+            style="width:100%; height:100%; border:0;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; 2024 <strong>Sumit Kolpe</strong>. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Swiper: autoplay, navigation, pagination
+    if (typeof Swiper !== 'undefined') {
+      new Swiper('.portfolio-details-slider', {
+        speed: 700,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: true
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
+    }
+
+    // Lazy load video: only load when modal opens
+    const videoModal = document.getElementById('modalVideo');
+    const iframe = document.getElementById('demoVideoFrame');
+
+    if (videoModal && iframe) {
+      const videoSrc = iframe.getAttribute('data-src');
+
+      videoModal.addEventListener('show.bs.modal', function () {
+        // load the video only when modal is shown
+        iframe.src = videoSrc;
+      });
+
+      videoModal.addEventListener('hidden.bs.modal', function () {
+        // completely stop the video when modal closes
+        iframe.src = '';
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

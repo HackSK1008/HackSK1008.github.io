@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitMantra — Project Details | Sumit Kolpe</title>
+  <meta name="description" content="FitMantra — AI-based virtual gym trainer. Project details, demo, presentation and documents." />
+  <meta name="keywords" content="FitMantra, Virtual Gym, AI, Computer Vision, Portfolio, Sumit Kolpe" />
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet" />
+
+  <style>
+    /* Small custom polish for the details page */
+    .page-title.dark-background { padding: 28px 0; background: #0f1724; color: #fff; }
+    .page-title .breadcrumbs a { color: rgba(255,255,255,0.85); }
+    .project-card { border-radius: 12px; overflow: hidden; }
+    .project-hero { object-fit: cover; width: 100%; height: 100%; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+    .action-toolbar { right: 16px; top: 16px; z-index: 10; }
+    .floating-actions { position: fixed; right: 18px; bottom: 24px; z-index: 1200; display: flex; gap: .5rem; flex-direction: column; }
+    .floating-actions .btn { min-width: 190px; white-space: nowrap; }
+    @media (max-width: 576px) {
+      .action-toolbar { right: 10px; top: 10px; }
+      .floating-actions .btn { min-width: 150px; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+
+<body class="portfolio-details-page">
+
+  <!-- Header -->
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="Profile Image" class="img-fluid rounded-circle">
+    </div>
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Sumit Kolpe</h1>
+    </a>
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/sumitkolpe1008/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://wa.me/qr/C22YNP55MTIWJ1" class="Whatsapp"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://www.instagram.com/sumitkolpe1008/" class="instagram"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-folder navicon"></i> Projects</a></li>
+        <li><a href="index.html#internships"><i class="bi bi-briefcase navicon"></i> Internships</a></li>
+        <li><a href="index.html#patent"><i class="bi bi-award navicon"></i> Patent</a></li>
+        <li><a href="index.html#services"><i class="bi bi-trophy navicon"></i> Achievements</a></li>
+        <li><a href="index.html#certificate"><i class="bi bi-patch-check-fill navicon"></i> Certifications</a></li>
+        <li><a href="index.html#leadership"><i class="bi bi-people-fill navicon"></i> Leadership</a></li>
+        <li><a href="index.html#testimonials"><i class="bi bi-chat-text navicon"></i> Testimonials</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center position-relative">
+        <div>
+          <h1 class="mb-2 mb-lg-0">FitMantra — AI-Based Virtual Gym Trainer</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#portfolio">Projects</a></li>
+              <li class="current">FitMantra</li>
+            </ol>
+          </nav>
+        </div>
+
+        <!-- Top-right action toolbar -->
+        <div class="action-toolbar position-absolute d-flex gap-2" style="right:0;">
+          <a href="#" id="topViewDemo" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalVideo"><i class="bi bi-play-btn me-1"></i> View demo video</a>
+          <a href="assets/docs/finalIDE.pptx" class="btn btn-light btn-sm" download><i class="bi bi-file-earmark-ppt me-1"></i> Download presentation</a>
+          <a href="assets/docs/FitMantra.pdf" class="btn btn-light btn-sm" download><i class="bi bi-file-earmark-text me-1"></i> Download project document</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <!-- Slider / Hero -->
+          <div class="col-lg-8">
+            <div class="card project-card">
+              <div class="p-0">
+                <div class="portfolio-details-slider swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/app-1.jpg" alt="FitMantra - demo" class="project-hero">
+                    </div>
+                    
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Info -->
+          <div class="col-lg-4">
+            <div class="card h-100 shadow-sm" style="border-radius:12px;">
+              <div class="card-body">
+                <h3 class="card-title">Project Overview</h3>
+                <p class="text-muted">FitMantra is a social-impact project designed to make quality fitness guidance accessible using computer vision, gamification and IoT.</p>
+
+                <h5 class="mt-3">Key Features</h5>
+                <ul>
+                  <li><strong>Real-Time Posture Correction</strong> — reduces injuries using pose estimation.</li>
+                  <li><strong>Gamified Motivation</strong> — points, leaderboards and streaks to boost adherence.</li>
+                  <li><strong>Personalized Plans</strong> — analytics-driven plans tailored per user.</li>
+                  <li><strong>IoT Integration</strong> — optional sensors for richer tracking.</li>
+                </ul>
+
+                <h5 class="mt-3">Technologies</h5>
+                <p>Python, OpenCV, MediaPipe, TensorFlow, Flask, Flutter, IoT</p>
+
+                <h5 class="mt-3">Outcome & Recognition</h5>
+                <p>Cost-effective solution for gym-goers; awarded <strong>1st Prize — Healthcare Domain</strong> at an international hackathon hosted by PICT Pune.</p>
+
+                <div class="mt-4 d-grid gap-2">
+                  
+                  <a href="https://fitmantra1008.github.io/FitMantra_/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit live website</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed sections below -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <div class="card shadow-sm" style="border-radius:12px;">
+              <div class="card-body">
+                <h4>Technical Summary</h4>
+                <p>FitMantra combines optimized pose-estimation with lightweight models to run efficiently on mobile devices and edge units. It focuses on accuracy, low-latency feedback and privacy-preserving data handling.</p>
+
+                <h5>Architecture</h5>
+                <ol>
+                  <li>Video capture → Pose Estimation → Posture Analysis</li>
+                  <li>Local feedback loop (visual + audio), gamification engine, server-side analytics</li>
+                  <li>Optional IoT sensor aggregation for advanced metrics</li>
+                </ol>
+
+                <h5>Results</h5>
+                <ul>
+                  <li>Improved form correction accuracy in user tests.</li>
+                  <li>Increased average workout adherence in pilot users.</li>
+                </ul>
+
+                <h5>Downloads & Resources</h5>
+                <ul>
+                  <li><a href="assets/docs/finalIDE.pptx" download>Presentation (PDF)</a></li>
+                  <li><a href="assets/docs/FitMantra.pdf" download>Project Document (PDF)</a></li>
+                  <li><a href="assets/docs/FitMantra_Patent.pdf" target="_blank" rel="noopener noreferrer">Patent / application reference</a></li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Floating action buttons -->
+    <div class="floating-actions">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVideo"><i class="bi bi-play-btn me-1"></i> View demo video</button>
+      <a href="assets/docs/finalIDE.pptx" class="btn btn-success" download><i class="bi bi-file-earmark-ppt me-1"></i> Download presentation</a>
+      <a href="assets/docs/FitMantra.pdf" class="btn btn-success" download><i class="bi bi-file-earmark-text me-1"></i> Download project document</a>
+    </div>
+
+    
+
+  </main>
+
+  <!-- Demo Video Modal (loads Google Drive preview lazily) -->
+<div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl"><!-- modal-xl for bigger viewing -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalVideoLabel">FitMantra — Demo Video</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-0">
+        <!-- responsive aspect ratio container -->
+        <div class="ratio ratio-16x9" style="max-height:85vh;">
+          <!-- NOTE: data-src is the Drive *embed/preview* URL (do NOT use the /view URL) -->
+          <iframe
+            id="demoVideoFrame"
+            data-src="https://drive.google.com/file/d/1OuKromtEOak8kxTQyCwRIMIpKLp0A3fi/preview"
+            title="FitMantra Demo Video"
+            allow="autoplay; encrypted-media; fullscreen"
+            allowfullscreen
+            style="width:100%; height:100%; border:0;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; 2024 <strong>Sumit Kolpe</strong>. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Swiper: autoplay, navigation, pagination
+    if (typeof Swiper !== 'undefined') {
+      new Swiper('.portfolio-details-slider', {
+        speed: 700,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: true
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
+    }
+
+    // Lazy load video: only load when modal opens
+    const videoModal = document.getElementById('modalVideo');
+    const iframe = document.getElementById('demoVideoFrame');
+
+    if (videoModal && iframe) {
+      const videoSrc = iframe.getAttribute('data-src');
+
+      videoModal.addEventListener('show.bs.modal', function () {
+        // load the video only when modal is shown
+        iframe.src = videoSrc;
+      });
+
+      videoModal.addEventListener('hidden.bs.modal', function () {
+        // completely stop the video when modal closes
+        iframe.src = '';
+      });
+    }
+  });
+</script>
+
+
+</body>
+
+</html>
