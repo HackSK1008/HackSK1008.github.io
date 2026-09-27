@@ -1297,3 +1297,45 @@ section,
   transform: scale(1.1);
   box-shadow: 0 0 8px rgba(255,165,0,0.6);
 }
+
+/* Reduce unnecessary spacing in About section */
+#about .section-title {
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+
+#about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Reduce excessive whitespace in Projects section */
+#portfolio.section {
+  padding-top: 20px !important;
+  padding-bottom: 40px;
+}
+
+#portfolio .section-title {
+  padding-bottom: 10px !important;
+  margin-bottom: 0 !important;
+}
+
+#portfolio .section-title h2 {
+  margin-bottom: 15px;
+}
+
+
+/* Reduce unnecessary spacing in Patent section */
+#patent.section {
+  padding-top: 20px !important;
+  padding-bottom: 40px !important;
+}
+
+#patent .section-title {
+  padding-bottom: 10px !important;
+  margin-bottom: 0 !important;
+}
+
+#patent .section-title h2 {
+  margin-bottom: 15px;
+}
