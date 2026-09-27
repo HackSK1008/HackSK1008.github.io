@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Achievement — Aegis Graham Bell Award | Sumit Kolpe</title>
-  <meta name="description" content="Aegis Graham Bell Award — Achievement details" />
-  <meta name="keywords" content="achievement, Aegis Graham Bell, award, Saheli, Sumit Kolpe" />
+  <title>Achievement — Academic Topper, Consistent Excellence | Sumit Kolpe</title>
+  <meta name="description" content="Academic Topper of the AI & Data Science Department for three consecutive years — achievement details for Sumit Kolpe" />
+  <meta name="keywords" content="achievement, academic topper, MMCOE, CGPA, Sumit Kolpe, AI Data Science" />
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon" />
@@ -14,47 +14,120 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
 
   <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
   <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet" />
 
   <style>
-    /* Page-specific styles (consistent with other achievement pages) */
-    .page-title.dark-background { padding: 24px 0; background: #0f1724; color: #fff; }
-    .page-title .breadcrumbs a { color: rgba(255,255,255,0.85); }
-    .achievement-hero { border-radius: 12px; overflow: hidden; }
-    .achievement-slide { width:100%; height:70vh; object-fit:cover; display:block; }
-    @media (max-width: 992px) { .achievement-slide { height:50vh; } }
-    @media (max-width: 576px) { .achievement-slide { height:40vh; } }
+    /* ── Swiper image sizing ── */
+    .achievement-slide {
+      width: 100%;
+      height: 68vh;
+      object-fit: cover;
+      display: block;
+    }
+    @media (max-width: 992px) { .achievement-slide { height: 50vh; } }
+    @media (max-width: 576px) { .achievement-slide { height: 38vh; } }
 
-    .achievement-info h3 { margin-top: 0; }
-    .action-toolbar { right: 16px; top: 16px; z-index: 10; position: absolute; }
-    .cert-preview-toolbar { position: absolute; right: 12px; top: 8px; z-index: 1200; }
-    .cert-iframe { width:100%; height:75vh; border:0; }
-    .floating-actions { position: fixed; right: 18px; bottom: 24px; z-index: 1200; display: flex; gap: .5rem; flex-direction: column; }
-    .floating-actions .btn { min-width: 170px; white-space: nowrap; }
-    .section .card-body h5 { margin-top: 0.5rem; }
-    .meta-list li { margin-bottom: .4rem; }
+    /* ── Sticky sidebar ── */
+    .achievement-info-card {
+      position: sticky;
+      top: 80px;
+    }
+
+    /* ── Meta list ── */
+    .meta-list li {
+      padding: 0.45rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.92rem;
+    }
+    .meta-list li:last-child { border-bottom: none; }
+
+    /* ── Certificate modal iframe ── */
+    .cert-iframe { width: 100%; height: 75vh; border: 0; }
+
+    /* ── Floating action buttons (mobile only) ── */
+    .floating-actions {
+      position: fixed;
+      right: 18px;
+      bottom: 24px;
+      z-index: 1100;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .floating-actions .btn { min-width: 180px; white-space: nowrap; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    @media (min-width: 992px) { .floating-actions { display: none; } }
+
+    /* ── Page-title action buttons ── */
+    .page-title-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    @media (min-width: 992px) { .page-title-actions { margin-top: 0; } }
+
+    /* ── Highlight badge pills ── */
+    .highlight-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #eef5ff;
+      border: 1px solid #cfe2ff;
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: #0a58ca;
+    }
+
+    /* ── GPA stat boxes ── */
+    .gpa-stat {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 10px;
+      padding: 16px 12px;
+      text-align: center;
+    }
+    .gpa-stat .gpa-num {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #0d6efd;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .gpa-stat .gpa-label {
+      font-size: 0.78rem;
+      color: #6c757d;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
   </style>
 </head>
+
 <body class="service-details-page">
 
-  <!-- Header -->
+  <!-- ══════════════════ HEADER ══════════════════ -->
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
+
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="Profile Image" class="img-fluid rounded-circle" />
+      <img src="assets/img/my-profile-img.jpg" alt="Sumit Kolpe" class="img-fluid rounded-circle" />
     </div>
+
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <h1 class="sitename">Sumit Kolpe</h1>
     </a>
+
     <div class="social-links text-center">
       <a href="https://www.linkedin.com/in/sumitkolpe1008/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       <a href="https://wa.me/qr/C22YNP55MTIWJ1" class="Whatsapp"><i class="bi bi-whatsapp"></i></a>
@@ -63,159 +136,242 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
         <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="index.html#portfolio"><i class="bi bi-folder navicon"></i> Projects</a></li>
         <li><a href="index.html#internships"><i class="bi bi-briefcase navicon"></i> Internships</a></li>
         <li><a href="index.html#patent"><i class="bi bi-award navicon"></i> Patent</a></li>
         <li><a href="index.html#services"><i class="bi bi-trophy navicon"></i> Achievements</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="index.html#certificate"><i class="bi bi-patch-check-fill navicon"></i> Certifications</a></li>
         <li><a href="index.html#leadership"><i class="bi bi-people-fill navicon"></i> Leadership</a></li>
         <li><a href="index.html#testimonials"><i class="bi bi-chat-text navicon"></i> Testimonials</a></li>
         <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
     </nav>
-  </header>
+  </header><!-- /Header -->
 
   <main class="main">
-     <!-- Page Title -->
-    <div class="page-title dark-background">
-      <div class="container d-lg-flex justify-content-between align-items-center position-relative">
-        <div>
-          <h1 class="mb-2 mb-lg-0">Academic Topper – Consistent Excellence</h1>
-          <nav class="breadcrumbs">
-            <ol>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#services">Achievements</a></li>
-              <li class="current">Academic Topper </li>
-            </ol>
-          </nav>
-        </div>
 
-        <!-- Top-right action toolbar -->
-        <div class="action-toolbar">
-          
+    <!-- ══════════════════ PAGE TITLE ══════════════════ -->
+    <div class="page-title dark-background">
+      <div class="container">
+        <div class="d-lg-flex justify-content-between align-items-center">
+
+          <!-- Left: title + breadcrumb -->
+          <div>
+            <h1 class="mb-1">Academic Topper — Consistent Excellence</h1>
+            <p class="mb-2 text-white-50" style="font-size:0.95rem;">MMCOE, Pune · AI &amp; Data Science · 3 Consecutive Years · GPA 9.85/10</p>
+            <nav class="breadcrumbs">
+              <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Achievements</a></li>
+                <li class="current">Academic Topper</li>
+              </ol>
+            </nav>
+          </div>
+
+          <!-- No certificate for this achievement — no action buttons needed in header -->
+
         </div>
       </div>
-    </div>
+    </div><!-- /Page Title -->
 
-    <!-- Achievement Details -->
+    <!-- ══════════════════ ACHIEVEMENT DETAILS ══════════════════ -->
     <section id="achievement-details" class="service-details section">
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
-          <!-- Slider column -->
+
+          <!-- ── LEFT: Image Slider + context ── -->
           <div class="col-lg-8">
-            <div class="achievement-hero">
-              <div class="swiper achievement-swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="assets/img/Topper1.jpeg" alt="Aegis Graham Bell - award" class="achievement-slide" />
+
+            <!-- Swiper -->
+            <div class="swiper achievement-swiper" style="border-radius:12px; overflow:hidden;">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/img/Topper1.jpeg" alt="Academic Topper Award — Sumit Kolpe" class="achievement-slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/topper2.jpeg" alt="Academic Excellence recognition ceremony" class="achievement-slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/topper3.jpeg" alt="Academic Topper — MMCOE Pune" class="achievement-slide" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+
+            <!-- GPA stats row -->
+            <div class="row gy-3 mt-3">
+              <div class="col-4">
+                <div class="gpa-stat">
+                  <div class="gpa-num">9.85</div>
+                  <div class="gpa-label">Final GPA / 10</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="gpa-stat">
+                  <div class="gpa-num">3</div>
+                  <div class="gpa-label">Consecutive Years</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="gpa-stat">
+                  <div class="gpa-num">6</div>
+                  <div class="gpa-label">Semesters Above 9</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Context below slider -->
+            <div class="mt-4">
+              <h4 class="mb-3">About this Achievement</h4>
+              <p>
+                Sumit was recognised as the <strong>Academic Topper of the AI &amp; Data Science Department</strong>
+                at MMCOE, Pune for <strong>three consecutive years</strong>, maintaining a CGPA above 9.0 across
+                all six semesters — finishing with a final GPA of <strong>9.85 / 10.0</strong>. This places him
+                among the top performers in his cohort across one of Pune's leading engineering institutions.
+              </p>
+              <p>
+                The recognition reflects not just raw academic performance but a sustained command of challenging
+                subjects spanning machine learning, deep learning, data structures, algorithms, database systems,
+                and statistical computing. Sumit balanced this academic consistency with active research, three
+                internships, multiple hackathon wins, and leadership of the college's AI &amp; Tech Club — all
+                simultaneously.
+              </p>
+              <p>
+                This track record of disciplined, top-tier academic performance has directly supported his
+                admission to the <strong>MSE in Data Science program at the University of Pennsylvania</strong>,
+                and demonstrates the analytical foundation required for graduate-level research and applied AI work.
+              </p>
+            </div>
+
+          </div><!-- /col-lg-8 -->
+
+          <!-- ── RIGHT: Info Sidebar ── -->
+          <div class="col-lg-4">
+            <div class="achievement-info-card">
+
+              <!-- Award overview card -->
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="flex-shrink-0" style="width:48px; height:48px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                      <i class="bi bi-mortarboard-fill text-primary fs-4"></i>
+                    </div>
+                    <div>
+                      <h5 class="mb-0">Academic Topper</h5>
+                      <small class="text-muted">MMCOE, Pune · 3 Consecutive Years</small>
+                    </div>
                   </div>
-                  <div class="swiper-slide">
-                    <img src="assets/img/topper2.jpeg" alt="Aegis event - presentation" class="achievement-slide" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="assets/img/topper3.jpeg" alt="Aegis award ceremony" class="achievement-slide" />
+
+                  <hr class="my-3">
+
+                  <ul class="list-unstyled meta-list mb-0">
+                    <li>
+                      <i class="bi bi-building text-primary me-2"></i>
+                      <strong>Institution:</strong>&nbsp;&nbsp; MMCOE, Pune (SPPU)
+                    </li>
+                    <li>
+                      <i class="bi bi-book text-primary me-2"></i>
+                      <strong>Department:</strong>&nbsp;&nbsp; AI &amp; Data Science
+                    </li>
+                    <li>
+                      <i class="bi bi-bar-chart-fill text-primary me-2"></i>
+                      <strong>GPA:</strong>&nbsp;&nbsp; 9.85 / 10.0
+                    </li>
+                    <li>
+                      <i class="bi bi-calendar-check text-primary me-2"></i>
+                      <strong>Duration:</strong>&nbsp;&nbsp; 3 years · 6 semesters
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Key Highlights card -->
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                  <h6 class="card-title mb-3"><i class="bi bi-star-fill text-warning me-2"></i>Key Highlights</h6>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> GPA 9.85/10</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> 3 Consecutive Years</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> 6 Semesters</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Dept. Topper</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Penn Admitted</span>
                   </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
               </div>
-            </div>
-          </div>
 
-          <!-- Info column -->
-          <div class="col-lg-4">
-            <div class="achievement-info">
-              <h3>Academic Topper – Consistent Excellence</h3>
-              <p class="fs-6 text-justify">
-                Recognized as the Academic Topper of the AI & Data Science Department for three consecutive years, maintaining a CGPA above 9/10. This distinction reflects sustained academic excellence, analytical depth, and mastery across core computer science and data science domains.
-              </p>
-
-              <h5 class="mt-3">Highlights</h5>
-              <ul>
-                <li class="meta-list"><strong>Institution:</strong> MMCOE, Pune</li>
-                <li class="meta-list"><strong>Performance:</strong> CGPA above 9 for six consecutive semesters</li>
-                <li class="meta-list"><strong>Recognition:</strong>  Academic Excellence Award (3 years)</li>
-                <li class="meta-list"><strong>Focus: </strong> Strong foundation in AI, and Data Science</li>
-              </ul>
-
-              <h5 class="mt-3">Impact</h5>
-              <p class="mb-0">This consistent performance demonstrates a blend of technical understanding and disciplined learning, establishing academic credibility and readiness for advanced graduate studies and research opportunities.</p>
-
-              <div class="mt-4 d-grid gap-2">
-                
-                <a href="index.html#services" class="btn btn-outline-primary">Back to Achievements</a>
+              <!-- Impact card -->
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                  <h6 class="card-title mb-2"><i class="bi bi-graph-up-arrow text-primary me-2"></i>Impact</h6>
+                  <p class="mb-0" style="font-size:0.92rem;">
+                    This consistent performance establishes strong academic credibility and directly supported
+                    admission to the MSE in Data Science at the University of Pennsylvania — demonstrating
+                    readiness for advanced graduate research and applied AI work.
+                  </p>
+                </div>
               </div>
+
+              <!-- Action buttons -->
+              <div class="d-grid gap-2">
+                <a href="index.html#services" class="btn btn-outline-primary">
+                  <i class="bi bi-arrow-left me-1"></i> Back to Achievements
+                </a>
+              </div>
+
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </div><!-- /col-lg-4 -->
 
-    
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </section><!-- /Achievement Details -->
 
-  <!-- Certificate Modal (lazy load) -->
-  <div class="modal fade" id="modalCertificate" tabindex="-1" aria-labelledby="modalCertificateLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalCertificateLabel">Certificate — Aegis Graham Bell Award</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+  </main><!-- /main -->
 
-        <div class="modal-body position-relative p-3">
-          <div class="cert-preview-toolbar">
-            <a id="certDownloadTop" href="assets/docs/Aegis_GrahamBell_Certificate.pdf" class="btn btn-sm btn-primary" download>
-              <i class="bi bi-download me-1"></i> Download
-            </a>
-          </div>
-
-          <div style="min-height:60vh;">
-            <iframe id="certPreviewFrame" class="cert-iframe" data-src="assets/docs/Aegis_GrahamBell_Certificate.pdf#view=FitH" title="Certificate preview"></iframe>
-          </div>
-        </div>
-
-        <div class="modal-footer">
-          <a href="#" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</a>
-          <a id="certDownloadFooter" href="assets/docs/Aegis_GrahamBell_Certificate.pdf" class="btn btn-primary" download>
-            <i class="bi bi-download me-1"></i> Download certificate
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
+  <!-- ══════════════════ FOOTER ══════════════════ -->
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sumit Kolpe</strong> <span>All Rights Reserved</span></p>
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sumit Kolpe Portfolio</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits text-center mt-2">
-        Designed by <a href="#">SK</a>
+        Designed by Sumit
       </div>
     </div>
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Initialize Swiper for the achievement slider
+
+      // ── AOS init ──
+      if (typeof AOS !== 'undefined') {
+        AOS.init({ duration: 600, easing: 'ease-in-out', once: true, mirror: false });
+      }
+
+      // ── Swiper ──
       if (typeof Swiper !== 'undefined') {
         new Swiper('.achievement-swiper', {
           loop: true,
@@ -226,27 +382,8 @@
         });
       }
 
-      // Certificate modal: lazy load PDF into iframe on show, clear on hide
-      const certModal = document.getElementById('modalCertificate');
-      const certFrame = document.getElementById('certPreviewFrame');
-      const certDownloadTop = document.getElementById('certDownloadTop');
-      const certDownloadFooter = document.getElementById('certDownloadFooter');
-
-      if (certModal && certFrame) {
-        const dataSrc = certFrame.getAttribute('data-src');
-
-        certModal.addEventListener('show.bs.modal', function () {
-          certFrame.src = dataSrc;
-          const downloadHref = dataSrc.split('#')[0];
-          certDownloadTop.href = downloadHref;
-          certDownloadFooter.href = downloadHref;
-        });
-
-        certModal.addEventListener('hidden.bs.modal', function () {
-          certFrame.src = '';
-        });
-      }
     });
   </script>
+
 </body>
 </html>

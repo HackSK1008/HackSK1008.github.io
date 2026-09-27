@@ -1,60 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Achievement — Represented India at International Hackathon, Slovakia | Sumit Kolpe</title>
-  <meta content="Represented India at an international hackathon in Slovakia — achievement details" name="description">
-  <meta content="achievement, hackathon, Slovakia, Sumit Kolpe" name="keywords">
+  <meta name="description" content="Represented India at an international hackathon in Slovakia — achievement details for Sumit Kolpe" />
+  <meta name="keywords" content="achievement, hackathon, Slovakia, Sumit Kolpe, international" />
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet" />
 
   <style>
-    /* Page-specific styles */
-    .page-title.dark-background { padding: 24px 0; background: #0f1724; color: #fff; }
-    .page-title .breadcrumbs a { color: rgba(255,255,255,0.85); }
-    .achievement-hero { border-radius: 12px; overflow: hidden; }
-    .achievement-slide { width:100%; height:70vh; object-fit:cover; display:block; }
-    @media (max-width: 992px) { .achievement-slide { height:50vh; } }
-    @media (max-width: 576px) { .achievement-slide { height:40vh; } }
+    /* ── Swiper image sizing ── */
+    .achievement-slide {
+      width: 100%;
+      height: 68vh;
+      object-fit: cover;
+      display: block;
+    }
+    @media (max-width: 992px) { .achievement-slide { height: 50vh; } }
+    @media (max-width: 576px) { .achievement-slide { height: 38vh; } }
 
-    .achievement-info h3 { margin-top: 0; }
-    .action-toolbar { right: 16px; top: 16px; z-index: 10; position: absolute; }
-    .cert-preview-toolbar { position: absolute; right: 12px; top: 8px; z-index: 1200; }
-    .cert-iframe { width:100%; height:75vh; border:0; }
-    .floating-actions { position: fixed; right: 18px; bottom: 24px; z-index: 1200; display: flex; gap: .5rem; flex-direction: column; }
-    .floating-actions .btn { min-width: 170px; white-space: nowrap; }
-    .section .card-body h5 { margin-top: 0.5rem; }
-    .meta-list li { margin-bottom: .4rem; }
+    /* ── Sticky sidebar ── */
+    .achievement-info-card {
+      position: sticky;
+      top: 80px;
+    }
+
+    /* ── Meta list ── */
+    .meta-list li {
+      padding: 0.45rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.92rem;
+    }
+    .meta-list li:last-child { border-bottom: none; }
+
+    /* ── Certificate modal iframe ── */
+    .cert-iframe { width: 100%; height: 75vh; border: 0; }
+
+    /* ── Floating action buttons (mobile only) ── */
+    .floating-actions {
+      position: fixed;
+      right: 18px;
+      bottom: 24px;
+      z-index: 1100;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .floating-actions .btn { min-width: 180px; white-space: nowrap; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    @media (min-width: 992px) { .floating-actions { display: none; } }
+
+    /* ── Page-title action buttons ── */
+    .page-title-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    @media (min-width: 992px) { .page-title-actions { margin-top: 0; } }
+
+    /* ── Highlight badge pills ── */
+    .highlight-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #eef5ff;
+      border: 1px solid #cfe2ff;
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: #0a58ca;
+    }
+
+    /* ── India flag image ── */
+    .india-flag-wrap {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+    .india-flag-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
   </style>
 </head>
+
 <body class="service-details-page">
 
-  <!-- Header -->
+  <!-- ══════════════════ HEADER ══════════════════ -->
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
+
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="Profile Image" class="img-fluid rounded-circle">
+      <img src="assets/img/my-profile-img.jpg" alt="Sumit Kolpe" class="img-fluid rounded-circle" />
     </div>
+
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <h1 class="sitename">Sumit Kolpe</h1>
     </a>
+
     <div class="social-links text-center">
       <a href="https://www.linkedin.com/in/sumitkolpe1008/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       <a href="https://wa.me/qr/C22YNP55MTIWJ1" class="Whatsapp"><i class="bi bi-whatsapp"></i></a>
@@ -63,217 +126,318 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
         <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="index.html#portfolio"><i class="bi bi-folder navicon"></i> Projects</a></li>
         <li><a href="index.html#internships"><i class="bi bi-briefcase navicon"></i> Internships</a></li>
         <li><a href="index.html#patent"><i class="bi bi-award navicon"></i> Patent</a></li>
         <li><a href="index.html#services"><i class="bi bi-trophy navicon"></i> Achievements</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="index.html#certificate"><i class="bi bi-patch-check-fill navicon"></i> Certifications</a></li>
         <li><a href="index.html#leadership"><i class="bi bi-people-fill navicon"></i> Leadership</a></li>
         <li><a href="index.html#testimonials"><i class="bi bi-chat-text navicon"></i> Testimonials</a></li>
         <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
     </nav>
-  </header>
-  <!-- End Header -->
+  </header><!-- /Header -->
 
   <main class="main">
-    <!-- Page Title -->
-    <div class="page-title dark-background">
-      <div class="container d-lg-flex justify-content-between align-items-center position-relative">
-        <div>
-          <h1 class="mb-2 mb-lg-0">Represented India — International Hackathon (Slovakia)</h1>
-          <nav class="breadcrumbs">
-            <ol>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#services">Achievements</a></li>
-              <li class="current">Slovakia Hackathon</li>
-            </ol>
-          </nav>
-        </div>
 
-        <!-- Top-right action toolbar -->
-        <div class="action-toolbar">
-          <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalCertificate" id="openCertBtn">
-            <i class="bi bi-award me-1"></i> View certificate / credential
-          </button>
-          <a href="assets/docs/Slovakia_Certificate.pdf" class="btn btn-light btn-sm" download>
-            <i class="bi bi-download me-1"></i> Download certificate
-          </a>
+    <!-- ══════════════════ PAGE TITLE ══════════════════ -->
+    <div class="page-title dark-background">
+      <div class="container">
+        <div class="d-lg-flex justify-content-between align-items-center">
+
+          <!-- Left: title + breadcrumb -->
+          <div>
+            <h1 class="mb-1">International Hackathon — Slovakia, Europe</h1>
+            <p class="mb-2 text-white-50" style="font-size:0.95rem;">Represented India · Top 30 Global Teams · 30 Countries</p>
+            <nav class="breadcrumbs">
+              <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Achievements</a></li>
+                <li class="current">Slovakia Hackathon</li>
+              </ol>
+            </nav>
+          </div>
+
+          <!-- Right: action buttons (desktop) -->
+          <div class="page-title-actions">
+            <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalCertificate">
+              <i class="bi bi-award me-1"></i> View Certificate
+            </button>
+            <a href="assets/docs/Slovakia_Certificate.pdf" class="btn btn-light btn-sm" download>
+              <i class="bi bi-download me-1"></i> Download Certificate
+            </a>
+          </div>
+
         </div>
       </div>
-    </div>
+    </div><!-- /Page Title -->
 
-    <!-- Achievement Details -->
+    <!-- ══════════════════ ACHIEVEMENT DETAILS ══════════════════ -->
     <section id="achievement-details" class="service-details section">
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
-          <!-- Slider -->
+
+          <!-- ── LEFT: Image Slider + context ── -->
           <div class="col-lg-8">
-            <div class="achievement-hero">
-              <div class="swiper achievement-swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="assets/img/Slovakia.jpeg" alt="Slovakia - stage" class="achievement-slide">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="assets/img/slo1.jpeg" alt="Slovakia - demo" class="achievement-slide">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="assets/img/slo2.jpeg" alt="Slovakia - group" class="achievement-slide">
-                  </div>
+
+            <!-- Swiper -->
+            <div class="swiper achievement-swiper" style="border-radius:12px; overflow:hidden;">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/img/Slovakia.jpeg" alt="Slovakia hackathon — stage presentation" class="achievement-slide" />
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-slide">
+                  <img src="assets/img/slo1.jpeg" alt="Slovakia hackathon — live demo" class="achievement-slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/slo2.jpeg" alt="Slovakia hackathon — group photo" class="achievement-slide" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+
+            <!-- Context below slider -->
+            <div class="mt-4">
+              <h4 class="mb-3">About the Event</h4>
+              <p>
+                The International Hackathon 2024, held in <strong>Slovakia, Europe</strong>, was a prestigious global
+                competition that brought together <strong>30 finalist teams from 30 countries</strong> to build
+                innovative solutions for real-world challenges using AI, data science, and emerging technologies.
+              </p>
+              <p>
+                Sumit was selected as part of the <strong>sole team representing India</strong> — competing among
+                the world's top student innovators in an intense multi-day event involving live demos, technical
+                presentations, and evaluation by industry mentors and international judges. The team demonstrated
+                their AI-driven solution on a global platform, receiving recognition for technical depth and
+                cross-cultural collaboration.
+              </p>
+              <p>
+                This experience provided exposure to advanced simulation tools, global industry best practices, and
+                produced research-grade prototypes — reinforcing Sumit's ability to compete and collaborate at the
+                highest international level.
+              </p>
+            </div>
+
+            <!-- India Flag -->
+            <div class="mt-4">
+              <div class="india-flag-wrap">
+                <img src="assets/img/ind.jpg" alt="India Flag — Representing India at Slovakia International Hackathon" />
               </div>
             </div>
-          </div>
 
-          <!-- Info column -->
+          </div><!-- /col-lg-8 -->
+
+          <!-- ── RIGHT: Info Sidebar ── -->
           <div class="col-lg-4">
-            <div class="achievement-info">
-              <h3>Represented India at an International Hackathon in Slovakia, Europe</h3>
-              <p class="fs-6 text-justify">
-                Selected as the sole team from India to participate in an international hackathon hosted in Slovakia.
-                The event brought together global teams and industry mentors to solve real-world problems using AI and
-                data-driven solutions. Our participation showcased technical depth, cross-cultural collaboration and the
-                ability to compete on a global stage.
-              </p>
+            <div class="achievement-info-card">
 
-              
+              <!-- Award overview card -->
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
 
-              <h5 class="mt-3">Impact</h5>
-              <p class="mb-0">Helped strengthen international collaboration, produced research-grade prototypes, and gained exposure to advanced simulation tools and industry best practices.</p>
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="flex-shrink-0" style="width:48px; height:48px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                      <i class="bi bi-globe2 text-primary fs-4"></i>
+                    </div>
+                    <div>
+                      <h5 class="mb-0">International Hackathon</h5>
+                      <small class="text-muted">Slovakia, Europe — 2024</small>
+                    </div>
+                  </div>
 
-              <div class="mt-4 d-grid gap-2">
-  <a href="index.html#services" class="btn btn-outline-primary">Back to Achievements</a>
+                  <hr class="my-3">
 
-  <div class="mt-4 d-grid gap-2">
-  
-  <!-- India flag below the button (image version for universal compatibility) -->
-  <div class="text-center mt-3">
-    <img src="assets/img/ind.jpg" alt="India Flag" 
-         style="width:450px; height:auto; border-radius:4px; box-shadow:0 0 4px rgba(0,0,0,0.2);">
-  </div>
-</div>
+                  <ul class="list-unstyled meta-list mb-0">
+                    <li>
+                      <i class="bi bi-calendar-event text-primary me-2"></i>
+                      <strong>Year:</strong> 2024
+                    </li>
+                    <li>
+                      <i class="bi bi-geo-alt text-primary me-2"></i>
+                      <strong>Location:</strong> Slovakia, Europe
+                    </li>
+                    <li>
+                      <i class="bi bi-flag text-primary me-2"></i>
+                      <strong>Representing:</strong> India (sole team)
+                    </li>
+                    <li>
+                      <i class="bi bi-people text-primary me-2"></i>
+                      <strong>Global teams:</strong> 30 teams · 30 countries
+                    </li>
+                    <li>
+                      <i class="bi bi-star text-primary me-2"></i>
+                      <strong>Selection:</strong> Top global finalist teams
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
+              <!-- Key Highlights card -->
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                  <h6 class="card-title mb-3"><i class="bi bi-star-fill text-warning me-2"></i>Key Highlights</h6>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Global Finalist</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Represented India</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> 30 Countries</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> AI-Driven Solution</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Europe 2024</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Impact card -->
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                  <h6 class="card-title mb-2"><i class="bi bi-graph-up-arrow text-primary me-2"></i>Impact</h6>
+                  <p class="mb-0" style="font-size:0.92rem;">
+                    Strengthened international collaboration skills, produced research-grade AI prototypes, and gained
+                    exposure to advanced simulation tools and global industry best practices — competing among the
+                    world's top student innovators.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Action buttons -->
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCertificate">
+                  <i class="bi bi-award me-1"></i> View Certificate
+                </button>
+                <a href="assets/docs/Slovakia_Certificate.pdf" class="btn btn-outline-secondary" download>
+                  <i class="bi bi-download me-1"></i> Download Certificate
+                </a>
+                <a href="index.html#services" class="btn btn-light">
+                  <i class="bi bi-arrow-left me-1"></i> Back to Achievements
+                </a>
+              </div>
 
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </div><!-- /col-lg-4 -->
 
-    <!-- Floating action buttons -->
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </section><!-- /Achievement Details -->
+
+    <!-- Floating actions (mobile only) -->
     <div class="floating-actions">
-      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCertificate"><i class="bi bi-award me-1"></i> View certificate</button>
-      <a href="assets/docs/Slovakia_Certificate.pdf" class="btn btn-success" download><i class="bi bi-download me-1"></i> Download certificate</a>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCertificate">
+        <i class="bi bi-award me-1"></i> View Certificate
+      </button>
+      <a href="assets/docs/Slovakia_Certificate.pdf" class="btn btn-success" download>
+        <i class="bi bi-download me-1"></i> Download Certificate
+      </a>
     </div>
 
-  </main>
+  </main><!-- /main -->
 
-  <!-- Certificate Modal (lazy load) -->
+  <!-- ══════════════════ CERTIFICATE MODAL ══════════════════ -->
   <div class="modal fade" id="modalCertificate" tabindex="-1" aria-labelledby="modalCertificateLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalCertificateLabel">Certificate — Slovakia Hackathon (Representation)</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
 
-        <div class="modal-body position-relative p-3">
-          <div class="cert-preview-toolbar">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCertificateLabel">
+            <i class="bi bi-award me-2 text-primary"></i>Certificate — Slovakia International Hackathon
+          </h5>
+          <div class="ms-auto me-2">
             <a id="certDownloadTop" href="assets/docs/Slovakia_Certificate.pdf" class="btn btn-sm btn-primary" download>
               <i class="bi bi-download me-1"></i> Download
             </a>
           </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
 
+        <div class="modal-body p-3">
           <div style="min-height:60vh;">
             <iframe id="certPreviewFrame" class="cert-iframe" data-src="assets/docs/Slovakia_Certificate.pdf#view=FitH" title="Certificate preview"></iframe>
           </div>
         </div>
 
         <div class="modal-footer">
-          <a href="#" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</a>
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
           <a id="certDownloadFooter" href="assets/docs/Slovakia_Certificate.pdf" class="btn btn-primary" download>
-            <i class="bi bi-download me-1"></i> Download certificate
+            <i class="bi bi-download me-1"></i> Download Certificate
           </a>
         </div>
+
       </div>
     </div>
-  </div>
+  </div><!-- /Certificate Modal -->
 
-  <!-- Footer -->
+  <!-- ══════════════════ FOOTER ══════════════════ -->
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sumit Kolape</strong> <span>All Rights Reserved</span></p>
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sumit Kolpe Portfolio</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits text-center mt-2">
-        Designed by <a href="#">SK</a>
+        Designed by Sumit
       </div>
     </div>
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Initialize Swiper for the achievement slider
+
+      // ── AOS init ──
+      if (typeof AOS !== 'undefined') {
+        AOS.init({ duration: 600, easing: 'ease-in-out', once: true, mirror: false });
+      }
+
+      // ── Swiper ──
       if (typeof Swiper !== 'undefined') {
         new Swiper('.achievement-swiper', {
           loop: true,
           speed: 700,
-          autoplay: {
-            delay: 3200,
-            disableOnInteraction: false
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-          }
+          autoplay: { delay: 3200, disableOnInteraction: false },
+          pagination: { el: '.swiper-pagination', clickable: true },
+          navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
         });
       }
 
-      // Certificate modal lazy-load logic
-      const certModal = document.getElementById('modalCertificate');
-      const certFrame = document.getElementById('certPreviewFrame');
-      const certDownloadTop = document.getElementById('certDownloadTop');
-      const certDownloadFooter = document.getElementById('certDownloadFooter');
+      // ── Certificate modal: lazy-load PDF ──
+      const certModal  = document.getElementById('modalCertificate');
+      const certFrame  = document.getElementById('certPreviewFrame');
+      const certDlTop  = document.getElementById('certDownloadTop');
+      const certDlFoot = document.getElementById('certDownloadFooter');
 
       if (certModal && certFrame) {
-        const dataSrc = certFrame.getAttribute('data-src');
-
+        const src = certFrame.getAttribute('data-src');
         certModal.addEventListener('show.bs.modal', function () {
-          certFrame.src = dataSrc;
-          const downloadHref = dataSrc.split('#')[0];
-          certDownloadTop.href = downloadHref;
-          certDownloadFooter.href = downloadHref;
+          if (certFrame.src !== src) certFrame.src = src;
+          const dl = src.split('#')[0];
+          if (certDlTop)  certDlTop.href  = dl;
+          if (certDlFoot) certDlFoot.href = dl;
         });
-
         certModal.addEventListener('hidden.bs.modal', function () {
           certFrame.src = '';
         });
       }
+
     });
   </script>
+
 </body>
 </html>

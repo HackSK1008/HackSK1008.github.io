@@ -3,10 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Sumit Kolpe - AI Engineer Portfolio</title>
-  <meta content="Official portfolio of Sumit Kolpe, an AI & Data Science Engineer with expertise in AI/ML, data analytics, and innovative solutions." name="description">
-  <meta content="Sumit Kolpe, AI Engineer, Data Science, Portfolio, Machine Learning, AI Projects, PuneSumit Kolpe, AI Engineer, Data Science, Portfolio, Machine Learning, AI Projects, Pune" name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumit Kolpe — AI & Data Science Engineer | Portfolio</title>
+  <meta name="description" content="Official portfolio of Sumit Kolpe — AI & Data Science Engineer, patented inventor, incoming MSE student at the University of Pennsylvania. Expert in ML, NLP, computer vision, and data science.">
+  <meta name="keywords" content="Sumit Kolpe, AI Engineer, Data Science, Machine Learning, NLP, Computer Vision, Portfolio, University of Pennsylvania, Pune, Saheli, FitMantra">
+
+  <!-- Open Graph (LinkedIn / social preview) -->
+  <meta property="og:title" content="Sumit Kolpe — AI & Data Science Engineer">
+  <meta property="og:description" content="Patented inventor, National Aegis Graham Bell Award winner, incoming MSE at University of Pennsylvania. Explore my AI projects, research, and achievements.">
+  <meta property="og:image" content="assets/img/my-profile-img.jpg">
+  <meta property="og:type" content="website">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -17,14 +23,14 @@
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -38,148 +44,310 @@
 
 <body class="index-page">
 
+  <!-- ══════════════════ HEADER ══════════════════ -->
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
+    <!-- Profile Image -->
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/my-profile-img.jpg" alt="Sumit Kolpe" class="img-fluid rounded-circle">
     </div>
 
+    <!-- Name -->
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Sumit Kolpe</h1>
     </a>
 
+    <!-- Social Links -->
     <div class="social-links text-center">
-      <a href="https://www.linkedin.com/in/sumitkolpe1008/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="https://wa.me/qr/C22YNP55MTIWJ1" class="Whatsapp"><i class="bi bi-whatsapp"></i></a>
-      <a href="https://www.instagram.com/sumitkolpe1008/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/sumitkolpe1008/" class="linkedin" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://wa.me/qr/C22YNP55MTIWJ1" class="Whatsapp" title="WhatsApp" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/sumitkolpe1008/" class="instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
     </div>
 
+    <!-- Navigation -->
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#skills"><i class="bi bi-code-slash navicon"></i> Skills</a></li>
         <li><a href="#portfolio"><i class="bi bi-folder navicon"></i> Projects</a></li>
         <li><a href="#internships"><i class="bi bi-briefcase navicon"></i> Internships</a></li>
-        <li><a href="#patent"><i class="bi bi-award navicon"></i> Patent</a></li>
+        <li><a href="#patent"><i class="bi bi-file-earmark-medical navicon"></i> Patent</a></li>
         <li><a href="#services"><i class="bi bi-trophy navicon"></i> Achievements</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#certificate"><i class="bi bi-patch-check-fill navicon"></i> Certifications</a></li>
         <li><a href="#leadership"><i class="bi bi-people-fill navicon"></i> Leadership</a></li>
-        <li><a href="#testimonials"><i class="bi bi-chat-text navicon"></i> Testimonials</a></li>
+        <li><a href="#testimonials"><i class="bi bi-chat-quote navicon"></i> Testimonials</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
     </nav>
 
-  </header>
+  </header><!-- /Header -->
 
   <main class="main">
 
-    <!-- Hero Section -->
+    <!-- ══════════════════ HERO SECTION ══════════════════ -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpeg" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/hero-bg1.png" alt="AI & Data Science background" data-aos="fade-in">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Sumit Kolpe</h2>
-        <span class="badge bg-success">Patented Inventor</span>
 
-        <p>I'm <span class="typed" data-typed-items="AI Enthusiast, Data Scientist, Innovator, International Hackathon Winner">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <h2>Sumit Kolpe</h2>
+
+        <!-- Credential badges -->
+          <span class="badge bg-warning text-dark">MSE Data Science</span>
+          <span class="badge bg-primary">National Aegis Graham Bell Award</span>
+          <span class="badge bg-success">Patented Inventor</span>
+          
+          
+        
+
+        <!-- Typed roles -->
+        <p>I'm a
+          <span
+            class="typed"
+            data-typed-items="AI & Data Science Engineer, Patented Inventor, National Award Winner, International Hackathon Finalist, Incoming MSE @ UPenn">
+          </span>
+          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+        </p>
+
       </div>
 
     </section><!-- /Hero Section -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+<!-- About Section -->
+<section id="about" class="about section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
-        <h2>About</h2>
-        <p> I’m a final-year Artificial Intelligence and Data Science engineering student at SPPU Pune, passionate about building intelligent systems that merge innovation with real-world impact. My journey so far has been driven by curiosity from developing AI-driven solutions like FitMantra, an award-winning virtual gym trainer (patent published), to leading Saheli, India’s first AI-powered women’s safety platform recognized with the Aegis Graham Bell Award.</p>
-      <!-- </div>End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About</h2>
+    <p>
+      AI &amp; Data Science engineer, patented inventor, and  MSE student at the
+      <strong>University of Pennsylvania</strong> — building intelligent systems that create
+      measurable real-world impact.
+    </p>
+  </div><!-- End Section Title -->
 
-      <!-- <div class="container" > -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <!-- <div class="row gy-4 justify-content-center"> -->
-          <div class="col-lg-4">
-            <img src="C:\Users\sumit\OneDrive\Desktop\alex-smith-main\alex-smith-main\assets\img\Photo.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>AI & Data Science Engineer</h2>
-            
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>DOB:</strong> <span>19 June 2004</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>CGPA:</strong> <span>9.52/10</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8378990108</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Pune, India</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Engineering (AI & Data Science)</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sumitkolpe1008@gmail.com</span></li>
-                  
-                </ul>
-              </div>
+    <div class="row gy-4">
+
+      <!-- ── LEFT: Quick-info card ── -->
+      <div class="col-lg-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+
+            <h4 class="card-title mb-1">Sumit Pradeep Kolpe</h4>
+            <p class="text-muted mb-3" style="font-size:0.9rem;">AI &amp; Data Science Engineer</p>
+
+            <hr>
+
+            <ul class="list-unstyled mb-3" style="font-size:0.92rem; line-height:2.1;">
+              <li>
+                <i class="bi bi-mortarboard-fill text-primary me-2"></i>
+                <strong>Next:</strong>&nbsp;
+                MSE Data Science —
+                <span class="text-primary fw-semibold">University of Pennsylvania</span>
+              </li>
+              <li>
+                <i class="bi bi-star-fill text-primary me-2"></i>
+                <strong>GPA:</strong> <span>9.85 / 10.0</span>
+              </li>
+              <li>
+                <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                <strong>Location:</strong> <span>Pune, India</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope-fill text-primary me-2"></i>
+                <strong>Email:</strong>&nbsp;
+                <a href="mailto:sumitkolpe1008@gmail.com">sumitkolpe1008@gmail.com</a>
+              </li>
+              <li>
+                <i class="bi bi-linkedin text-primary me-2"></i>
+                <strong>LinkedIn:</strong>&nbsp;
+                <a href="https://www.linkedin.com/in/sumitkolpe1008/" target="_blank" rel="noopener">sumitkolpe1008</a>
+              </li>
+            </ul>
+
+            <hr>
+
+            <div class="d-flex flex-column gap-2">
+              <a href="assets/docs/Sumit_Kolpe_Resume.pdf" class="btn btn-primary btn-sm" download>
+                <i class="bi bi-download me-1"></i> Download Resume
+              </a>
+              <a href="#contact" class="btn btn-outline-primary btn-sm">
+                <i class="bi bi-envelope me-1"></i> Get In Touch
+              </a>
             </div>
-            <p class="py-3">
-              As someone who has represented India at an international hackathon in Europe and earned accolades like Best Innovator of Maharashtra and Best AI Tech Award by Infosys, I find purpose in solving problems that lie at the intersection of AI, data, and human experience. My academic consistency (CGPA 9.5+) and research exposure including a machine learning internship in France and a research symposium presentation at IIT Bombay have shaped my analytical thinking and technical depth.
-            </p>
-            <p class="py-3">
-              Looking ahead, I aspire to pursue advanced studies in Computer Science and Data Science, focusing on scalable, ethical, and human-centered AI applications. Beyond code, I value creativity, collaboration, and mentorship having guided 130+ student innovators through NEURA, my college’s AI club. I see technology not just as a tool, but as a way to inspire and uplift communities through innovation.
-            </p>
+
           </div>
         </div>
+      </div><!-- /col-lg-4 -->
 
-      <!-- </div> -->
+      <!-- ── RIGHT: Bio + highlights ── -->
+      <div class="col-lg-8 content">
 
-    </section><!-- /About Section -->
+        <h3 class="mb-3">Building AI that solves real problems</h3>
+
+        <p>
+          I'm a final-year B.E. student in Artificial Intelligence &amp; Data Science at
+          Savitribai Phule Pune University (MMCOE) with a <strong>GPA of 9.85/10</strong>,
+          and I'll be joining the <strong>MSE in Data Science program at the University of
+          Pennsylvania</strong> in Fall 2025. My work spans applied AI end-to-end from NLP
+          and computer vision to time-series forecasting and network security research.
+        </p>
+
+        <p>
+          I led <strong>Saheli</strong>, India's first AI-powered women's safety platform,
+          which earned the <strong>National Aegis Graham Bell Award 2025</strong> from the
+          Ministry of Electronics &amp; IT and secured a competitive
+          <strong>Government of India (AICTE) research grant</strong>. I also engineered
+          <strong>FitMantra</strong>, an AI virtual gym trainer with a
+          <strong>published Indian patent</strong> (App. No. 202421004780) that achieved a
+          ~60% reduction in posture errors during testing.
+        </p>
+
+        <p>
+          Internationally, I completed a <strong>research internship at Avignon University,
+          France</strong> working on AI-based anomaly detection for 5G/6G wireless networks,
+          and an <strong>AI Practitioner internship at Infosys</strong> where I boosted
+          e-commerce demand forecasting accuracy by 25%. I also
+          <strong>represented India at the International Hackathon 2024 in Slovakia,
+          Europe</strong> — selected among 30 global finalist teams across 30 countries.
+        </p>
+
+        <p>
+          Outside engineering, I mentored <strong>130+ student innovators</strong> as
+          Innovation Coordinator for India's government-backed IIC, and served as President
+          of NEURA, my college's AI &amp; Tech Club. I believe technology is most powerful
+          when it is scalable, ethical, and built with the communities it serves.
+        </p>
+
+        <!-- Key Highlights -->
+        <h5 class="mt-4 mb-3">Key Highlights</h5>
+        <div class="row gy-3">
+
+          <div class="col-md-6">
+            <div class="d-flex align-items-start gap-2">
+              <i class="bi bi-trophy-fill text-primary fs-5 mt-1 flex-shrink-0"></i>
+              <div>
+                <strong>National Aegis Graham Bell Award 2025</strong>
+                <div class="text-muted" style="font-size:0.87rem;">Ministry of Electronics &amp; IT, Govt. of India</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="d-flex align-items-start gap-2">
+              <i class="bi bi-globe2 text-primary fs-5 mt-1 flex-shrink-0"></i>
+              <div>
+                <strong>International Hackathon 2024 — Slovakia, Europe</strong>
+                <div class="text-muted" style="font-size:0.87rem;">Top 30 global finalist teams across 30 countries</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="d-flex align-items-start gap-2">
+              <i class="bi bi-journal-text text-primary fs-5 mt-1 flex-shrink-0"></i>
+              <div>
+                <strong>Springer Journal of Big Data (Q1) — Under Review</strong>
+                <div class="text-muted" style="font-size:0.87rem;">Research paper &amp; patent published Feb 2024</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="d-flex align-items-start gap-2">
+              <i class="bi bi-patch-check-fill text-primary fs-5 mt-1 flex-shrink-0"></i>
+              <div>
+                <strong>GATE 2025 Exam — Top 10% Nationwide</strong>
+                <div class="text-muted" style="font-size:0.87rem;">Among 57,000+ candidates; India's premier national graduate entrance exam, with fewer than 15% of candidates qualifying</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="d-flex align-items-start gap-2">
+              <i class="bi bi-building text-primary fs-5 mt-1 flex-shrink-0"></i>
+              <div>
+                <strong>Research Intern — Avignon University, France</strong>
+                <div class="text-muted" style="font-size:0.87rem;">AI-driven security research for 5G/6G networks</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="d-flex align-items-start gap-2">
+              <i class="bi bi-people-fill text-primary fs-5 mt-1 flex-shrink-0"></i>
+              <div>
+                <strong>Mentored 130+ Student Innovators</strong>
+                <div class="text-muted" style="font-size:0.87rem;">IIC Innovation Coordinator &amp; NEURA Club President</div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /highlights row -->
+
+      </div><!-- /col-lg-8 -->
+
+    </div><!-- /row -->
+
+  </div><!-- /container -->
+
+</section><!-- /About Section -->
 
     <!-- Stats Section -->
     <section id="stats" class="stats section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
 
+          <!-- Hackathon Wins -->
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
-              <i class="bi bi-trophy"></i>
+              <i class="bi bi-trophy-fill"></i>
               <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hackathon Wins</strong> <span>National and International</span></p>
+              <p><strong>Hackathon Wins</strong> <span>International, National &amp; State</span></p>
             </div>
           </div><!-- End Stats Item -->
 
+          <!-- Awards & Recognitions -->
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Students Mentored</strong> <span>academic and professional</span></p>
+              <i class="bi bi-award-fill"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Awards &amp; Honours</strong> <span>Government, Industry &amp; Academic</span></p>
             </div>
           </div><!-- End Stats Item -->
 
+          <!-- Students Mentored -->
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
-              <i class="bi bi-briefcase"></i>
+              <i class="bi bi-people-fill"></i>
+              <span data-purecounter-start="0" data-purecounter-end="130" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Students Mentored</strong> <span>IIC Innovation Coordinator</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <!-- Internships -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-briefcase-fill"></i>
               <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Internships</strong> <span>AI and Data Science roles</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hackathons & Conferances Participated</strong> <span>local to international</span></p>
+              <p><strong>Internships</strong> <span>France, India &amp; United Kingdom</span></p>
             </div>
           </div><!-- End Stats Item -->
 
         </div>
-
       </div>
 
     </section><!-- /Stats Section -->
@@ -190,80 +358,145 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Experienced in various technical domains with a focus on AI, Data Science, and Programming</p>
+        
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
 
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Python</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          <!-- ① Languages & Core Programming -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="flex-shrink-0" style="width:42px; height:42px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                    <i class="bi bi-code-slash text-primary fs-5"></i>
+                  </div>
+                  <h6 class="mb-0">Languages &amp; Programming</h6>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Python</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">C++</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">SQL</span>
+                  
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">HTML / CSS</span>
+                </div>
               </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Computer Vision</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Data Structure & Alogorithms</span> <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Deep Learning</span> <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
+            </div>
           </div>
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Machine Learning</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          <!-- ② Machine Learning & AI -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="flex-shrink-0" style="width:42px; height:42px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                    <i class="bi bi-cpu text-primary fs-5"></i>
+                  </div>
+                  <h6 class="mb-0">Machine Learning &amp; AI</h6>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Supervised Learning</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Deep Learning</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">NLP</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Computer Vision</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Time-Series</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Anomaly Detection</span>
+                </div>
               </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>SQL & Database Management</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>C++</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Data Analysis</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
+            </div>
           </div>
 
-        </div>
+          <!-- ③ Frameworks & Libraries -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="flex-shrink-0" style="width:42px; height:42px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                    <i class="bi bi-layers text-primary fs-5"></i>
+                  </div>
+                  <h6 class="mb-0">Frameworks &amp; Libraries</h6>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">TensorFlow</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">PyTorch</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Scikit-learn</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">OpenCV</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Pandas</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">NumPy</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Matplotlib</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      </div>
+          <!-- ④ Data Science & Analytics -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="flex-shrink-0" style="width:42px; height:42px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                    <i class="bi bi-bar-chart-fill text-primary fs-5"></i>
+                  </div>
+                  <h6 class="mb-0">Data Science &amp; Analytics</h6>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Feature Engineering</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Data Cleaning</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">EDA</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Power BI</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Statistical Modelling</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Data Visualisation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ⑤ Databases -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="flex-shrink-0" style="width:42px; height:42px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                    <i class="bi bi-database-fill text-primary fs-5"></i>
+                  </div>
+                  <h6 class="mb-0">Databases</h6>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">MySQL</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">PostgreSQL</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">MongoDB</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Oracle DB</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">SQL Queries &amp; Joins</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ⑥ Tools & DevOps -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="flex-shrink-0" style="width:42px; height:42px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                    <i class="bi bi-tools text-primary fs-5"></i>
+                  </div>
+                  <h6 class="mb-0">Tools &amp; DevOps</h6>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Git &amp; GitHub</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Jupyter Notebook</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">VS Code</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">Google Colab</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">AWS / GCP</span>
+                  <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.82rem; padding:6px 14px;">OCI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /row -->
+      </div><!-- /container -->
 
     </section><!-- /Skills Section -->
 
@@ -276,7 +509,7 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Projects</h2>
-    <p>AI & Data Science projects showcasing innovation in machine learning, computer vision, and data analytics. Explore my solutions for healthcare, fitness, and smart technologies.</p>
+    
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -287,7 +520,7 @@
         <div class="card h-100 shadow-sm">
           <div class="card-body d-flex flex-column">
             <div class="d-flex align-items-start mb-3">
-              <img src="assets/img/portfolio/app-1.jpg" alt="FitMantra" class="img-fluid rounded me-3" style="width:120px; height:80px; object-fit:cover;">
+              <img src="assets/img/portfolio/app-1.png" alt="FitMantra" class="img-fluid rounded me-3" style="width:120px; height:80px; object-fit:cover;">
               <div>
                 <h5 class="card-title mb-1">FitMantra — AI-based Virtual Gym Trainer</h5>
                 <small class="text-muted">Computer vision, posture correction & gamified motivation</small>
@@ -345,125 +578,235 @@
 </section><!-- /Portfolio Section -->
 
     <!-- Patent Section -->
-<section id="patent" class="patent section light-background">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Patent</h2>
-    <p>An official patent related to the FitMantra project — click to view details or verify on the Indian patent inventory.</p>
-  </div>
+    <section id="patent" class="patent section light-background">
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row gy-4 justify-content-center">
-      <div class="col-lg-8">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex align-items-start">
-            <div class="me-3">
-              <i class="bi bi-file-earmark-medical fs-1 text-primary"></i>
-            </div>
-            <div class="flex-grow-1">
-              <h4 class="card-title mb-1">An IOT based Smart Fitness Solution (FitMantra)</h4>
-              <p class="mb-2"><strong>Application No.:</strong> 202421004780 &nbsp; | &nbsp; <strong>Published:</strong> Feb 2024</p>
-              <p class="mb-3">Patent published for a computer vision based fitness system enabling real-time posture correction, gamified motivation, and personalized health planning. Designed to democratize access to quality fitness training through ethical AI, user privacy, and data-driven personalization.</p>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Patent</h2>
+        
+      </div><!-- End Section Title -->
 
-              <div>
-                <!-- opens modal with full details -->
-                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalPatentDetails">
-                  <i class="bi bi-eye me-1"></i> View details
-                </button>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-10">
 
-                <!-- direct PDF download (optional — add file if you have one) -->
-                <a href="assets/docs/FitMantra_Patent.pdf" class="btn btn-primary btn-sm" download>
-                  <i class="bi bi-download me-1"></i> Download (PDF)
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- end col -->
-    </div><!-- end row -->
-  </div><!-- end container -->
-</section>
-<!-- /Patent Section -->
+            <div class="card shadow-sm">
+              <div class="card-body p-4">
+                <div class="row gy-4 align-items-center">
+
+                  <!-- ── LEFT: Icon + status badge ── -->
+                  <div class="col-md-2 text-center">
+                    <div style="width:72px; height:72px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 10px;">
+                      <i class="bi bi-file-earmark-medical-fill text-primary" style="font-size:2rem;"></i>
+                    </div>
+                    <span class="badge bg-success" style="font-size:0.75rem;">Published</span>
+                  </div>
+
+                  <!-- ── CENTRE: Patent details ── -->
+                  <div class="col-md-7">
+                    <h5 class="card-title mb-1">An IoT-Based Smart Fitness Solution (FitMantra)</h5>
+                    <p class="text-muted mb-3" style="font-size:0.85rem;">
+                      Indian Patent &nbsp;·&nbsp;
+                      <strong>Application No.:</strong> 202421004780 &nbsp;·&nbsp;
+                      <strong>Published:</strong> February 2024
+                    </p>
+                    <p class="mb-3" style="font-size:0.92rem;">
+                      Patent published for a computer vision–based fitness system enabling <strong>real-time posture correction</strong>,
+                      gamified progress tracking, and personalised health planning. Built on OpenCV and TensorFlow,
+                      achieving a ~60% reduction in posture errors during testing. Designed to democratise access to
+                      quality fitness training through ethical AI, user privacy, and data-driven personalisation.
+                    </p>
+
+                    <!-- Key claim badges -->
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.78rem; padding:5px 12px;">Computer Vision</span>
+                      <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.78rem; padding:5px 12px;">Posture Correction</span>
+                      <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.78rem; padding:5px 12px;">OpenCV · TensorFlow</span>
+                      <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.78rem; padding:5px 12px;">Gamification</span>
+                      <span class="badge rounded-pill" style="background:#e7f0ff; color:#0a58ca; font-size:0.78rem; padding:5px 12px;">IoT</span>
+                    </div>
+                  </div>
+
+                  <!-- ── RIGHT: Action buttons ── -->
+                  <div class="col-md-3 d-flex flex-column gap-2">
+                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalPatentDetails">
+                      <i class="bi bi-eye me-1"></i> View Details
+                    </button>
+                    <a href="assets/docs/FitMantra_Patent.pdf" class="btn btn-outline-primary btn-sm" download>
+                      <i class="bi bi-download me-1"></i> Download PDF
+                    </a>
+                    <a href="https://ipindia.gov.in/writereaddata/Portal/IPOJournal/1_5065_1/Part-1.pdf" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-box-arrow-up-right me-1"></i> Verify on IP India
+                    </a>
+                  </div>
+
+                </div><!-- /inner row -->
+              </div><!-- /card-body -->
+            </div><!-- /card -->
+
+          </div><!-- /col-lg-10 -->
+        </div><!-- /row -->
+      </div><!-- /container -->
+
+    </section><!-- /Patent Section -->
 
 <!-- Internships Section -->
-<section id="internships" class="internships section light-background">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Internships</h2>
-    <p>Professional internships and research experiences that shaped my applied AI & systems work.</p>
-  </div>
+    <section id="internships" class="internships section light-background">
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row gy-4">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Internships</h2>
+        
+      </div><!-- End Section Title -->
 
-      <!-- Avignon University -->
-      <div class="col-lg-6 col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <div class="d-flex align-items-start mb-3">
-              <div class="icon rounded-circle p-3 me-3" style="background:#eef5ff;">
-                <i class="bi bi-globe fs-4"></i>
-              </div>
-              <div>
-                <h5 class="card-title mb-1">International Research Intern — Avignon University, France</h5>
-                <small class="text-muted">Digital Twin, 6G security research</small>
-              </div>
-            </div>
-            <p class="card-text">Led a team building a Digital Twin for 5G/6G network simulation, modelled DoS scenarios with AI-based anomaly detection, researched RIS & edge infra, and received special commendation.</p>
-            <div class="mt-auto d-flex gap-2">
-              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalInternAvignon">View experience letter</button>
-              <a class="btn btn-light" href="assets/docs/Intern_Avignon_Experience.pdf" download><i class="bi bi-download me-1"></i> Download experience letter</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
 
-      <!-- Infosys -->
-      <div class="col-lg-6 col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <div class="d-flex align-items-start mb-3">
-              <div class="icon rounded-circle p-3 me-3" style="background:#fff6ee;">
-                <i class="bi bi-building fs-4"></i>
-              </div>
-              <div>
-                <h5 class="card-title mb-1">AI Practitioner Intern — Infosys, India</h5>
-                <small class="text-muted">Time-series forecasting & ethical AI</small>
-              </div>
-            </div>
-            <p class="card-text">Built and tuned time-series demand forecasting models (≈25% accuracy improvement), focused on interpretability and ethical deployment in cloud pipelines.</p>
-            <div class="mt-auto d-flex gap-2">
-              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalInternInfosys">View experience letter</button>
-              <a class="btn btn-light" href="assets/docs/Intern_Infosys_Experience.pdf" download><i class="bi bi-download me-1"></i> Download experience letter</a>
-            </div>
-          </div>
-        </div>
-      </div>
+          <!-- ── Avignon University, France ── -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
 
-      <!-- Sponsorlytix -->
-      <div class="col-lg-6 col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <div class="d-flex align-items-start mb-3">
-              <div class="icon rounded-circle p-3 me-3" style="background:#eefef6;">
-                <i class="bi bi-bar-chart-line fs-4"></i>
-              </div>
-              <div>
-                <h5 class="card-title mb-1">Data Scientist Intern — Sponsorlytix Pvt. LTD, UK</h5>
-                <small class="text-muted">Computer vision & Machine Learning</small>
-              </div>
-            </div>
-            <p class="card-text">Improved driver-attention detection to 92%+ F1-score and cut hazard-detection false positives by 33% by rebuilding a multimodal pipeline (in-cabin behavior + road video) for early road-risk forecasting (~2.4s early warnings).</p>
-            <div class="mt-auto d-flex gap-2">
-              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalInternSponsorlytix">View experience letter</button>
-              <a class="btn btn-light" href="assets/docs/Intern_Sponserlytix_Experience.pdf" download><i class="bi bi-download me-1"></i> Download experience letter</a>
-            </div>
-          </div>
-        </div>
-      </div>
+                <!-- Header row -->
+                <div class="d-flex align-items-start mb-3">
+                  <div class="icon rounded-circle p-3 me-3 flex-shrink-0" style="background:#eef5ff;">
+                    <i class="bi bi-globe fs-4 text-primary"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-1" style="font-size:0.97rem; line-height:1.4;">International Research Intern</h5>
+                    <div class="fw-semibold text-primary" style="font-size:0.85rem;">Avignon University, France</div>
+                    <small class="text-muted">Jun 2025 – Aug 2025 &nbsp;·&nbsp; France 🇫🇷</small>
+                  </div>
+                </div>
 
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section>
-<!-- /Internships Section -->
+                <!-- Domain badge -->
+                <div class="mb-2">
+                  <span class="badge bg-primary me-1" style="font-size:0.72rem;">6G Security</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">Digital Twin</span>
+                </div>
+
+                <!-- Description -->
+                <p class="card-text" style="font-size:0.9rem;">
+                  Led development of a Digital Twin simulation for 5G/6G wireless networks to evaluate real-time behaviour under DoS attacks. Implemented AI-based anomaly detection to strengthen network resilience and explored Reconfigurable Intelligent Surfaces (RIS) for secure beam reconfiguration. Received special commendation; manuscript in preparation.
+                </p>
+
+                <!-- Skill tags -->
+                <p class="text-muted mb-3" style="font-size:0.8rem;">
+                  <i class="bi bi-tools me-1"></i>Python · Network Simulation · Anomaly Detection · RIS · Ethical AI
+                </p>
+
+                <!-- Actions -->
+                <div class="mt-auto d-flex flex-wrap gap-2">
+                  <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalInternAvignon">
+                    <i class="bi bi-eye me-1"></i> View Letter
+                  </button>
+                  <a class="btn btn-light btn-sm" href="assets/docs/Intern_Avignon_Experience.pdf" download>
+                    <i class="bi bi-download me-1"></i> Download
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /Avignon -->
+
+          <!-- ── Infosys, India ── -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+
+                <!-- Header row -->
+                <div class="d-flex align-items-start mb-3">
+                  <div class="icon rounded-circle p-3 me-3 flex-shrink-0" style="background:#fff6ee;">
+                    <i class="bi bi-building fs-4" style="color:#f57c00;"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-1" style="font-size:0.97rem; line-height:1.4;">AI Practitioner Intern</h5>
+                    <div class="fw-semibold" style="font-size:0.85rem; color:#f57c00;">Infosys, India</div>
+                    <small class="text-muted">May 2024 – Jul 2024 &nbsp;·&nbsp; Pune, India 🇮🇳</small>
+                  </div>
+                </div>
+
+                <!-- Domain badge -->
+                <div class="mb-2">
+                  <span class="badge me-1" style="background:#f57c00; font-size:0.72rem;">Forecasting</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">Ethical AI</span>
+                </div>
+
+                <!-- Description -->
+                <p class="card-text" style="font-size:0.9rem;">
+                  Developed and deployed time-series forecasting models for e-commerce demand prediction, achieving a <strong>25% improvement in accuracy</strong> across product categories. Focused on model interpretability and explainability to align with Infosys's responsible AI guidelines. Recognised with the <strong>Best AI Tech Innovator Award</strong> at the Annual AI Summit.
+                </p>
+
+                <!-- Skill tags -->
+                <p class="text-muted mb-3" style="font-size:0.8rem;">
+                  <i class="bi bi-tools me-1"></i>Python · Time-Series · SHAP · SQL · Cloud AI · MLOps
+                </p>
+
+                <!-- Actions -->
+                <div class="mt-auto d-flex flex-wrap gap-2">
+                  <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalInternInfosys">
+                    <i class="bi bi-eye me-1"></i> View Letter
+                  </button>
+                  <a class="btn btn-light btn-sm" href="assets/docs/Intern_Infosys_Experience.pdf" download>
+                    <i class="bi bi-download me-1"></i> Download
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /Infosys -->
+
+          <!-- ── Sponsorlytix, UK ── -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+
+                <!-- Header row -->
+                <div class="d-flex align-items-start mb-3">
+                  <div class="icon rounded-circle p-3 me-3 flex-shrink-0" style="background:#eefef6;">
+                    <i class="bi bi-bar-chart-line fs-4 text-success"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-1" style="font-size:0.97rem; line-height:1.4;">Data Scientist Intern</h5>
+                    <div class="fw-semibold text-success" style="font-size:0.85rem;">Sponsorlytix Pvt. Ltd, UK</div>
+                    <small class="text-muted">Nov 2022 – Dec 2022 &nbsp;·&nbsp; United Kingdom 🇬🇧</small>
+                  </div>
+                </div>
+
+                <!-- Domain badge -->
+                <div class="mb-2">
+                  <span class="badge bg-success me-1" style="font-size:0.72rem;">Computer Vision</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">Safety AI</span>
+                </div>
+
+                <!-- Description -->
+                <p class="card-text" style="font-size:0.9rem;">
+                  Designed and optimised a multimodal driver-attention and hazard-forecasting system using in-cabin behaviour and forward-road video. Improved attention detection to <strong>92%+ F1-score</strong>, reduced false positives by <strong>~33%</strong>, and enabled <strong>~2.4s earlier</strong> risk-warning predictions by rebuilding a noisy real-world data pipeline.
+                </p>
+
+                <!-- Skill tags -->
+                <p class="text-muted mb-3" style="font-size:0.8rem;">
+                  <i class="bi bi-tools me-1"></i>OpenCV · PyTorch · Computer Vision · Multimodal ML · AWS
+                </p>
+
+                <!-- Actions -->
+                <div class="mt-auto d-flex flex-wrap gap-2">
+                  <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalInternSponsorlytix">
+                    <i class="bi bi-eye me-1"></i> View Letter
+                  </button>
+                  <a class="btn btn-light btn-sm" href="assets/docs/Intern_Sponserlytix_Experience.pdf" download>
+                    <i class="bi bi-download me-1"></i> Download
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /Sponsorlytix -->
+
+        </div><!-- /row -->
+      </div><!-- /container -->
+
+    </section><!-- /Internships Section -->
 
 
 
@@ -473,7 +816,7 @@
     
 
 
-    <!-- Services Section -->
+    <!-- Achievements Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
@@ -482,100 +825,107 @@
         
       </div><!-- End Section Title -->
 
-      <div class="container">
-
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-star"></i></div>
-            <div>
-              <h4 class="title"><a href="A2.html" class="stretched-link">International Hackathon at Slovakia, Europe</a></h4>
-              <p class="description">Represented India as the sole team at an international hackathon in Slovakia, showcasing innovative solutions and technical expertise on a global platform.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-trophy"></i></div>
-            <div>
-              <h4 class="title"><a href="A6.html" class="stretched-link">National Aegis Graham Bell Award</a></h4>
-              <p class="description">Received the prestigious Aegis Graham Bell Award from Government of India, one of India’s top honors for technological innovation in Artificial Intelligence.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-flag"></i></div>
-            <div>
-              <h4 class="title"><a href="A3.html" class="stretched-link">International Hackathon – 1st Prize, Healthcare Domain</a></h4>
-              <p class="description">Awarded 1st Prize in the Healthcare Domain at an international hackathon by PICT Pune for creating transformative AI solutions to enhance healthcare delivery.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-award-fill"></i></div>
-            <div>
-              <h4 class="title"><a href="A4.html" class="stretched-link">Best AI Tech Innovator</a></h4>
-              <p class="description">Honored as the Best AI Tech Innovator by Infosys India at their Annual AI Summit in Bengaluru for delivering cutting-edge AI solutions that drive significant impact in the technology sector.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-trophy"></i></div>
-            <div>
-              <h4 class="title"><a href="A5.html" class="stretched-link">National Level PAN IIT Hackathon – 3rd Rank </a></h4>
-              <p class="description">Secured 3rd Rank at the prestigious National-level PAN IIT Hackathon for developing an AI-based Fitness Monitoring System that integrates advanced AI and fitness technology.</p>
-            </div>
-          </div><!-- End Service Item -->
-
+          <!-- ① National Aegis Graham Bell Award — highest impact, Govt. of India -->
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-trophy-fill"></i></div>
+            <div>
+              <h4 class="title"><a href="A6.html" class="stretched-link">National Aegis Graham Bell Award 2025</a></h4>
+              <p class="description">India's top AI innovation honour — presented by the Ministry of Electronics &amp; IT, Government of India. Selected from 1,200+ nominations for the Saheli AI women's safety platform.</p>
+            </div>
+          </div><!-- End Achievement Item -->
+
+          <!-- ② International Hackathon Slovakia — international representation -->
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="150">
+            <div class="icon flex-shrink-0"><i class="bi bi-globe2"></i></div>
+            <div>
+              <h4 class="title"><a href="A2.html" class="stretched-link">International Hackathon — Slovakia, Europe 2024</a></h4>
+              <p class="description">Represented India as the sole team among 30 global finalists from 30 countries — competing in an international AI innovation challenge in Slovakia, Europe.</p>
+            </div>
+          </div><!-- End Achievement Item -->
+
+          <!-- ③ Best Innovator of Maharashtra — MoE Govt. of India -->
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="icon flex-shrink-0"><i class="bi bi-award-fill"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Best Innovator of Maharashtra</a></h4>
-              <p class="description">Recognized by the Government of India during the IDE Bootcamp, hosted by AICTE and the Ministry of Education, for exceptional innovation in Artificial Intelligence that set new benchmarks in the field.</p>
+              <p class="description">Recognised by the Ministry of Education, Government of India at the IDE Bootcamp (AICTE) for exceptional AI innovation — selected through design thinking, market analysis, and feasibility evaluation.</p>
             </div>
-          </div>
-          <!-- End Service Item -->
+          </div><!-- End Achievement Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-trophy"></i></div>
-            <div>
-              <h4 class="title"><a href="A7.html" class="stretched-link">State-Level Hackathon – 2nd Rank</a></h4>
-              <p class="description">Awarded 2nd Rank at a state-level hackathon for developing the Virtual Gym Trainer project, demonstrating creativity and innovation in fitness technology</p>
-            </div>
-          </div><!-- End Service Item -->
+          <!-- ④ Best AI Tech Innovator by Infosys — industry award -->
+<div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="250">
+  <div class="icon flex-shrink-0"><i class="bi bi-building"></i></div>
+  <div>
+    <h4 class="title"><a href="A4.html" class="stretched-link">Best AI Tech Innovator — Infosys 2024</a></h4>
+    <p class="description">
+      Honoured by Infosys India at their Annual AI Summit in Bengaluru for developing FitMantra — an AI-based virtual gym trainer — recognized among 2500+ participants for its innovation, real-world impact, and scalability in fitness and healthcare.
+    </p>
+  </div>
+</div><!-- End Achievement Item -->
 
+          <!-- ⑤ Hackathon Wins — 1st International, 3rd PAN IIT, 2nd State -->
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-flag"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-patch-check-fill"></i></div>
             <div>
-              <h4 class="title"><a href="A8.html" class="stretched-link">Academic Topper – Consistent Excellence</a></h4>
-              <p class="description">Recognized as the Academic Topper for three consecutive years, maintaining a CGPA above 9.5 and demonstrating outstanding performance, dedication, and mastery in Artificial Intelligence and Data Science engineering.</p>
+              <h4 class="title"><a href="A12.html" class="stretched-link">Hackathon Wins — International, National &amp; State</a></h4>
+              <p class="description">1st Prize (International, Healthcare Domain) · 3rd Rank (PAN IIT National) · 2nd Rank (State-Level) — AI solutions that seeded FitMantra (patent) and Saheli (Aegis Award).</p>
             </div>
-          </div><!-- End Service Item -->
+          </div><!-- End Achievement Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-star"></i></div>
+          <!-- ⑥ Entrepreneurship Excellence Award -->
+<div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="350">
+  <div class="icon flex-shrink-0"><i class="bi bi-rocket-takeoff"></i></div>
+  <div>
+    <h4 class="title"><a href="A10.html" class="stretched-link">Entrepreneurship Excellence Award 2025</a></h4>
+    <p class="description">
+      Awarded by ENSIN Forum &amp; VIT Pune for driving innovation and entrepreneurship through leadership and mentorship — leading a 50+ member AI community, mentoring 130+ teams, and fostering innovation among 1500+ students.
+    </p>
+  </div>
+</div><!-- End Achievement Item -->
+
+          <!-- ⑦ Social Impact Award -->
+<div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+  <div class="icon flex-shrink-0"><i class="bi bi-heart-fill"></i></div>
+  <div>
+    <h4 class="title"><a href="A11.html" class="stretched-link">Social Impact Award 2025</a></h4>
+    <p class="description">
+      Presented by Vidyadhan India for sustained grassroots contributions in rural education and community development — impacting 3000+ students across 59 schools through technology awareness, mentorship, and social outreach initiatives over two years.
+    </p>
+  </div>
+</div><!-- End Achievement Item -->
+
+          <!-- ⑧ Academic Topper -->
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="450">
+            <div class="icon flex-shrink-0"><i class="bi bi-mortarboard-fill"></i></div>
             <div>
-              <h4 class="title"><a href="A9.html" class="stretched-link">Pioneer of AI & Data Science Department</a></h4>
-              <p class="description">Honored with the title of ‘Pioneer of AI & Data Science’ for exceptional contributions in innovation, research, and leadership, setting a benchmark of excellence and inspiring peers within the department.</p>
+              <h4 class="title"><a href="A8.html" class="stretched-link">Academic Topper — 3 Consecutive Years</a></h4>
+              <p class="description">Department topper in AI &amp; Data Science at MMCOE, Pune — maintaining a GPA above 9.0 across all six semesters, finishing with a final GPA of 9.85/10.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div><!-- End Achievement Item -->
 
+          <!-- ⑨ Pioneer of AI & Data Science -->
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-lightbulb-fill"></i></div>
+            <div>
+              <h4 class="title"><a href="A9.html" class="stretched-link">Pioneer of AI &amp; Data Science Department</a></h4>
+              <p class="description">MMCOE's highest departmental honour — recognising 6 hackathon wins, national &amp; international representation (Slovakia, France, IIT Bombay), leadership of NEURA Club (50+ members), mentoring 130+ student teams via IIC, and social impact across 3,000+ students in 59 rural schools.</p>
+            </div>
+          </div><!-- End Achievement Item -->
 
-          
+        </div><!-- /row -->
+      </div><!-- /container -->
 
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
+    </section><!-- /Achievements Section -->
 
       <!-- Resume Section (Embedded PDF preview + download) -->
 <section id="resume" class="resume section">
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Resume</h2>
-    <p>AI & Data Science engineer — preview or download my full resume below.</p>
+    
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -620,189 +970,406 @@
 <!-- /Resume Section -->
 
 
-    <!-- Portfolio Section -->
+    <!-- Certifications Section -->
     <section id="certificate" class="portfolio section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Certifications</h2>
-        <p></p>
+        <p>Industry-recognised credentials spanning cloud AI, machine learning, data science, and analytics — from Microsoft, Oracle, IBM, Infosys, ISRO, and more.</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/Microsoft.jpg" class="img-fluid" alt="Certificate">
-                <div class="portfolio-info">
-                  <h4></h4>
-                  <p>Microsoft Certified: Fabric Analytics Engineer Associate</p>
-                  <a href="assets/img/portfolio/Microsoft.jpg" title="Gained hands-on expertise in Microsoft Fabric, integrating data engineering, analytics, and visualization within a unified platform. Learned to design and deploy scalable data models, manage Dataflows, Lakehouses, and Pipelines, and implement end-to-end analytics workflows. Strengthened skills in Power BI, DAX, and SQL for advanced business intelligence. Enhanced ability to transform data into actionable insights, reinforcing enterprise-level analytics and AI-driven data system understanding." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+          <!-- ① Microsoft — Fabric Analytics Engineer Associate -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="position-relative">
+                <img src="assets/img/portfolio/Microsoft.jpg" class="card-img-top img-fluid" alt="Microsoft Fabric Analytics Engineer Associate Certificate" style="height:200px; object-fit:cover;">
+                <a href="assets/img/portfolio/Microsoft.jpg"
+                   title="Gained hands-on expertise in Microsoft Fabric, integrating data engineering, analytics, and visualization within a unified platform. Learned to design and deploy scalable data models, manage Dataflows, Lakehouses, and Pipelines, and implement end-to-end analytics workflows. Strengthened skills in Power BI, DAX, and SQL for advanced business intelligence."
+                   data-gallery="portfolio-gallery-app"
+                   class="glightbox preview-link position-absolute top-0 end-0 m-2 btn btn-sm btn-light">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="badge bg-primary" style="font-size:0.72rem;">Microsoft</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">Analytics</span>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/oracle.jpg" class="img-fluid" alt="Certificate">
-                <div class="portfolio-info">
-                  <h4></h4>
-                  <p>Oracle Certified Professional: Cloud Infrastructure Generative AI</p>
-                  <a href="assets/img/portfolio/oracle.jpg" title="Developed in-depth knowledge of Oracle Cloud Infrastructure (OCI) with a focus on deploying and managing Generative AI models securely in cloud environments. Gained hands-on experience with OCI Data Science services, model deployment pipelines, and API-based AI integration. Strengthened understanding of AI lifecycle management, data governance, and responsible AI principles. This certification enhanced my ability to design scalable, cloud-native AI systems aligned with enterprise and research applications." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/Isro.jpg" class="img-fluid" alt="Certificate">
-                <div class="portfolio-info">
-                  <h4></h4>
-                  <p>ISRO Certified: Applications of Machine Learning in Urban Studies</p>
-                  <a href="assets/img/portfolio/Isro.jpg" title="Explored the applications of machine learning and remote sensing in urban studies under ISRO’s expert guidance. Learned to analyze satellite imagery, classify urban land use, and apply predictive modeling for smart city planning and environmental monitoring. Strengthened understanding of geospatial data analysis and its integration with AI-driven decision systems for sustainable urban development." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/IBM.jpg" class="img-fluid" alt="Certificate">
-                <div class="portfolio-info">
-                  <h4></h4>
-                  <p>IBM: Machine Learning for Data Science</p>
-                  <a href="assets/img/portfolio/IBM.jpg" title="Gained a strong foundation in core machine learning concepts, algorithms, and model evaluation techniques through IBM’s professional program. Acquired practical experience in supervised and unsupervised learning, feature engineering, and model optimization using Python and Scikit-learn. Strengthened ability to apply ML workflows to real-world data science problems, enhancing both analytical and predictive modeling skills." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/TATA.jpeg" class="img-fluid" alt="Certificate">
-                <div class="portfolio-info">
-                  <h4></h4>
-                  <p>Tata Group: Data Visualisation: Empowering Business with Effective Insights Job Simulatio</p>
-                  <a href="assets/img/portfolio/TATA.jpeg" title="Completed a practical job simulation with Tata Group focused on data visualization and business analytics. Learned to transform complex datasets into meaningful visual insights using tools like Power BI and Tableau. Developed the ability to communicate data-driven stories, design executive dashboards, and support strategic decision-making through impactful visual reporting." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/Oracle_Data.jpg" class="img-fluid" alt="Certificate">
-                <div class="portfolio-info">
-                  <h4></h4>
-                  <p>Oracle Cloud Infrastructure 2025 Certified Data Science Professional</p>
-                  <a href="assets/img/portfolio/Oracle_Data.jpg" title="Achieved certification in Oracle Cloud Infrastructure Data Science, gaining hands-on expertise in building, training, and deploying ML models on OCI. Learned to manage data pipelines, automate model lifecycle workflows, and implement scalable MLOps practices. Strengthened proficiency in Python, Oracle ML libraries, and cloud-based analytics, enhancing my ability to develop enterprise-grade AI and data science solutions.
-                  " data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/Infosys.jpg" class="img-fluid" alt="Certificate">
-                <div class="portfolio-info">
-                  <h4></h4>
-                  <p> Infosys Springboard: AI & Emerging Tech Specialist</p>
-                  <a href="assets/img/portfolio/Infosys.jpg" title="Completed specialization in Artificial Intelligence and Emerging Technologies under Infosys Springboard, gaining insights into AI, machine learning, IoT, and automation frameworks. Developed practical understanding of AI model deployment, ethical AI principles, and integration of emerging technologies for real-world problem-solving and digital innovation." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/Micro.jpg" class="img-fluid" alt="Certificate">
-                <div class="portfolio-info">
-                  <h4></h4>
-                  <p>Microsoft & LinkedIn: Career Essentials in Generative AI</p>
-                  <a href="assets/img/portfolio/Micro.jpg" title="Completed the Career Essentials in Generative AI program by Microsoft and LinkedIn, gaining a deep understanding of generative AI concepts, prompt engineering, and responsible AI practices. Learned to apply AI tools for creativity, automation, and productivity while developing ethical awareness and strategic thinking for the evolving AI-driven workplace." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/SQL1 (1).jpg" class="img-fluid" alt="Certificate">
-                <div class="portfolio-info">
-                  <h4></h4>
-                  <p>The Complete SQL Bootcamp: Go from Zero to Hero</p>
-                  <a href="assets/img/portfolio/SQL1 (1).jpg" title="Mastered the fundamentals of SQL through extensive hands-on practice in querying, filtering, and manipulating databases. Learned to design and manage relational databases, write complex joins, and optimize queries for real-world data analysis. Strengthened data handling and analytical skills essential for data science and business intelligence applications." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Leadership & Community Involvement Section -->
-<section id="leadership" class="leadership section light-background">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Leadership & Community Involvement</h2>
-    <p>Roles and volunteering where I led initiatives and contributed to the community.</p>
-  </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row gy-4">
-      <!-- Card 1: President, NEURA AI Club -->
-      <div class="col-lg-6 col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <div class="d-flex align-items-start mb-3">
-              <div class="icon rounded-circle p-3 me-3" style="background:#eef7ff;">
-                <i class="bi bi-people-fill fs-4"></i>
-              </div>
-              <div>
-                <h5 class="card-title mb-1">President — NEURA AI Club</h5>
-                <small class="text-muted">Jul 2024 - Present</small>
+                <h6 class="card-title mb-1" style="font-size:0.92rem; line-height:1.4;">Microsoft Certified: Fabric Analytics Engineer Associate</h6>
+                <p class="card-text text-muted mt-auto" style="font-size:0.8rem;">Power BI · DAX · SQL · Data Engineering · MLOps</p>
               </div>
             </div>
-            <p class="card-text mb-3">Leading club strategy, organizing national-level events, and mentoring members in AI projects, hackathons and research activities.</p>
-            <div class="mt-auto">
-              <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalNeura">
-                Read more
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+          </div><!-- End Cert Item -->
 
-      <!-- Card 2: Volunteer, National Service Scheme -->
-      <div class="col-lg-6 col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <div class="d-flex align-items-start mb-3">
-              <div class="icon rounded-circle p-3 me-3" style="background:#fff7ee;">
-                <i class="bi bi-heart-pulse fs-4"></i>
+          <!-- ② Oracle — Cloud Infrastructure Generative AI -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="position-relative">
+                <img src="assets/img/portfolio/oracle.jpg" class="card-img-top img-fluid" alt="Oracle Cloud Infrastructure Generative AI Certificate" style="height:200px; object-fit:cover;">
+                <a href="assets/img/portfolio/oracle.jpg"
+                   title="Developed in-depth knowledge of Oracle Cloud Infrastructure (OCI) with a focus on deploying and managing Generative AI models securely in cloud environments. Gained hands-on experience with OCI Data Science services, model deployment pipelines, and API-based AI integration. Strengthened understanding of AI lifecycle management, data governance, and responsible AI principles."
+                   data-gallery="portfolio-gallery-app"
+                   class="glightbox preview-link position-absolute top-0 end-0 m-2 btn btn-sm btn-light">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
               </div>
-              <div>
-                <h5 class="card-title mb-1">Volunteer — National Service Scheme (NSS)</h5>
-                <small class="text-muted">2021 - Present</small>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="badge bg-danger" style="font-size:0.72rem;">Oracle</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">Generative AI</span>
+                </div>
+                <h6 class="card-title mb-1" style="font-size:0.92rem; line-height:1.4;">Oracle Certified: Cloud Infrastructure Generative AI Professional</h6>
+                <p class="card-text text-muted mt-auto" style="font-size:0.8rem;">OCI · Generative AI · Model Deployment · Data Governance</p>
               </div>
             </div>
-            <p class="card-text mb-3">Community outreach and social service activities including awareness drives, tech-education sessions and campus cleanliness campaigns.</p>
-            <div class="mt-auto">
-              <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalNSS">
-                Read more
-              </button>
+          </div><!-- End Cert Item -->
+
+          <!-- ③ Oracle — Data Science Professional -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="position-relative">
+                <img src="assets/img/portfolio/Oracle_Data.jpg" class="card-img-top img-fluid" alt="Oracle Cloud Infrastructure Data Science Professional Certificate" style="height:200px; object-fit:cover;">
+                <a href="assets/img/portfolio/Oracle_Data.jpg"
+                   title="Achieved certification in Oracle Cloud Infrastructure Data Science, gaining hands-on expertise in building, training, and deploying ML models on OCI. Learned to manage data pipelines, automate model lifecycle workflows, and implement scalable MLOps practices. Strengthened proficiency in Python, Oracle ML libraries, and cloud-based analytics."
+                   data-gallery="portfolio-gallery-app"
+                   class="glightbox preview-link position-absolute top-0 end-0 m-2 btn btn-sm btn-light">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="badge bg-danger" style="font-size:0.72rem;">Oracle</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">Data Science</span>
+                </div>
+                <h6 class="card-title mb-1" style="font-size:0.92rem; line-height:1.4;">Oracle Cloud Infrastructure 2025: Data Science Professional</h6>
+                <p class="card-text text-muted mt-auto" style="font-size:0.8rem;">OCI · MLOps · Model Lifecycle · Cloud Analytics · Python</p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /Leadership & Community Involvement Section -->
+          </div><!-- End Cert Item -->
+
+          <!-- ④ IBM — Machine Learning for Data Science -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="position-relative">
+                <img src="assets/img/portfolio/IBM.jpg" class="card-img-top img-fluid" alt="IBM Machine Learning for Data Science Certificate" style="height:200px; object-fit:cover;">
+                <a href="assets/img/portfolio/IBM.jpg"
+                   title="Gained a strong foundation in core machine learning concepts, algorithms, and model evaluation techniques through IBM's professional program. Acquired practical experience in supervised and unsupervised learning, feature engineering, and model optimization using Python and Scikit-learn. Strengthened ability to apply ML workflows to real-world data science problems."
+                   data-gallery="portfolio-gallery-app"
+                   class="glightbox preview-link position-absolute top-0 end-0 m-2 btn btn-sm btn-light">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="badge" style="background:#1f70c1; font-size:0.72rem;">IBM</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">Machine Learning</span>
+                </div>
+                <h6 class="card-title mb-1" style="font-size:0.92rem; line-height:1.4;">IBM Certified: Machine Learning for Data Science</h6>
+                <p class="card-text text-muted mt-auto" style="font-size:0.8rem;">Supervised Learning · Feature Engineering · Scikit-learn · Python</p>
+              </div>
+            </div>
+          </div><!-- End Cert Item -->
+
+          <!-- ⑤ Infosys Springboard — AI & Emerging Tech -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="position-relative">
+                <img src="assets/img/portfolio/Infosys.jpg" class="card-img-top img-fluid" alt="Infosys Springboard AI & Emerging Tech Specialist Certificate" style="height:200px; object-fit:cover;">
+                <a href="assets/img/portfolio/Infosys.jpg"
+                   title="Completed specialization in Artificial Intelligence and Emerging Technologies under Infosys Springboard, gaining insights into AI, machine learning, IoT, and automation frameworks. Developed practical understanding of AI model deployment, ethical AI principles, and integration of emerging technologies for real-world problem-solving."
+                   data-gallery="portfolio-gallery-app"
+                   class="glightbox preview-link position-absolute top-0 end-0 m-2 btn btn-sm btn-light">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="badge" style="background:#007cc3; font-size:0.72rem;">Infosys</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">Emerging Tech</span>
+                </div>
+                <h6 class="card-title mb-1" style="font-size:0.92rem; line-height:1.4;">Infosys Springboard: AI &amp; Emerging Tech Specialist</h6>
+                <p class="card-text text-muted mt-auto" style="font-size:0.8rem;">AI · ML · IoT · Automation · Ethical AI · Model Deployment</p>
+              </div>
+            </div>
+          </div><!-- End Cert Item -->
+
+          <!-- ⑥ ISRO — ML in Urban Studies -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="position-relative">
+                <img src="assets/img/portfolio/Isro.jpg" class="card-img-top img-fluid" alt="ISRO Machine Learning in Urban Studies Certificate" style="height:200px; object-fit:cover;">
+                <a href="assets/img/portfolio/Isro.jpg"
+                   title="Explored the applications of machine learning and remote sensing in urban studies under ISRO's expert guidance. Learned to analyze satellite imagery, classify urban land use, and apply predictive modeling for smart city planning and environmental monitoring. Strengthened understanding of geospatial data analysis and AI-driven decision systems for sustainable urban development."
+                   data-gallery="portfolio-gallery-app"
+                   class="glightbox preview-link position-absolute top-0 end-0 m-2 btn btn-sm btn-light">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="badge" style="background:#e06c00; font-size:0.72rem;">ISRO</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">Geospatial AI</span>
+                </div>
+                <h6 class="card-title mb-1" style="font-size:0.92rem; line-height:1.4;">ISRO Certified: Applications of Machine Learning in Urban Studies</h6>
+                <p class="card-text text-muted mt-auto" style="font-size:0.8rem;">Remote Sensing · Satellite Imagery · Smart City AI · Geospatial Analysis</p>
+              </div>
+            </div>
+          </div><!-- End Cert Item -->
+
+          <!-- ⑦ Microsoft & LinkedIn — Generative AI -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="position-relative">
+                <img src="assets/img/portfolio/Micro.jpg" class="card-img-top img-fluid" alt="Microsoft & LinkedIn Career Essentials in Generative AI Certificate" style="height:200px; object-fit:cover;">
+                <a href="assets/img/portfolio/Micro.jpg"
+                   title="Completed the Career Essentials in Generative AI program by Microsoft and LinkedIn, gaining a deep understanding of generative AI concepts, prompt engineering, and responsible AI practices. Learned to apply AI tools for creativity, automation, and productivity while developing ethical awareness and strategic thinking for the AI-driven workplace."
+                   data-gallery="portfolio-gallery-app"
+                   class="glightbox preview-link position-absolute top-0 end-0 m-2 btn btn-sm btn-light">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="badge bg-primary" style="font-size:0.72rem;">Microsoft</span>
+                  <span class="badge" style="background:#0a66c2; font-size:0.72rem;">LinkedIn</span>
+                </div>
+                <h6 class="card-title mb-1" style="font-size:0.92rem; line-height:1.4;">Microsoft &amp; LinkedIn: Career Essentials in Generative AI</h6>
+                <p class="card-text text-muted mt-auto" style="font-size:0.8rem;">Generative AI · Prompt Engineering · Responsible AI · LLMs</p>
+              </div>
+            </div>
+          </div><!-- End Cert Item -->
+
+          <!-- ⑧ Tata Group — Data Visualisation -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="position-relative">
+                <img src="assets/img/portfolio/TATA.jpeg" class="card-img-top img-fluid" alt="Tata Group Data Visualisation Job Simulation Certificate" style="height:200px; object-fit:cover;">
+                <a href="assets/img/portfolio/TATA.jpeg"
+                   title="Completed a practical job simulation with Tata Group focused on data visualization and business analytics. Learned to transform complex datasets into meaningful visual insights using tools like Power BI and Tableau. Developed the ability to communicate data-driven stories, design executive dashboards, and support strategic decision-making through impactful visual reporting."
+                   data-gallery="portfolio-gallery-app"
+                   class="glightbox preview-link position-absolute top-0 end-0 m-2 btn btn-sm btn-light">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="badge" style="background:#0a3ccc; font-size:0.72rem;">Tata Group</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">Data Viz</span>
+                </div>
+                <h6 class="card-title mb-1" style="font-size:0.92rem; line-height:1.4;">Tata Group: Data Visualisation — Business Insights Job Simulation</h6>
+                <p class="card-text text-muted mt-auto" style="font-size:0.8rem;">Power BI · Tableau · Executive Dashboards · Business Analytics</p>
+              </div>
+            </div>
+          </div><!-- End Cert Item -->
+
+          <!-- ⑨ SQL Bootcamp -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="position-relative">
+                <img src="assets/img/portfolio/SQL1 (1).jpg" class="card-img-top img-fluid" alt="Complete SQL Bootcamp Certificate" style="height:200px; object-fit:cover;">
+                <a href="assets/img/portfolio/SQL1 (1).jpg"
+                   title="Mastered the fundamentals of SQL through extensive hands-on practice in querying, filtering, and manipulating databases. Learned to design and manage relational databases, write complex joins, and optimize queries for real-world data analysis. Strengthened data handling and analytical skills essential for data science and business intelligence applications."
+                   data-gallery="portfolio-gallery-app"
+                   class="glightbox preview-link position-absolute top-0 end-0 m-2 btn btn-sm btn-light">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="badge" style="background:#f29111; font-size:0.72rem;">Udemy</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">SQL</span>
+                </div>
+                <h6 class="card-title mb-1" style="font-size:0.92rem; line-height:1.4;">The Complete SQL Bootcamp: Zero to Hero</h6>
+                <p class="card-text text-muted mt-auto" style="font-size:0.8rem;">SQL · Relational Databases · Query Optimization · Data Analysis</p>
+              </div>
+            </div>
+          </div><!-- End Cert Item -->
+
+        </div><!-- /row -->
+      </div><!-- /container -->
+
+    </section><!-- /Certifications Section -->
+
+   <!-- Leadership & Community Involvement Section -->
+    <section id="leadership" class="leadership section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Leadership &amp; Community Involvement</h2>
+        <p>Roles where I led innovation initiatives, mentored student communities, and contributed to social impact — beyond the lab and classroom.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <!-- ① Innovation Coordinator — IIC (highest institutional weight) -->
+          <div class="col-lg-6 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+
+                <div class="d-flex align-items-start mb-3">
+                  <div class="icon rounded-circle p-3 me-3 flex-shrink-0" style="background:#eef5ff;">
+                    <i class="bi bi-lightbulb-fill fs-4 text-primary"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-1" style="font-size:0.97rem; line-height:1.4;">Innovation Coordinator — Institute Innovation Council (IIC)</h5>
+                    <div class="fw-semibold text-primary" style="font-size:0.83rem;">Government of India Initiative · MMCOE, Pune</div>
+                    <small class="text-muted">2025 – Present</small>
+                  </div>
+                </div>
+
+                <div class="mb-2">
+                  <span class="badge bg-primary me-1" style="font-size:0.72rem;">Govt. of India</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">Innovation</span>
+                  <span class="badge bg-secondary ms-1" style="font-size:0.72rem;">Mentorship</span>
+                </div>
+
+                <p class="card-text" style="font-size:0.9rem;">
+                  Led design thinking and innovation initiatives for India's government-backed Institute Innovation Council, mentoring <strong>130+ student teams</strong> in translating technical ideas into socially responsible solutions across safety, healthcare, and sustainability. Conducted structured workshops promoting ethics-driven design and responsible AI.
+                </p>
+
+                <p class="text-muted mb-3" style="font-size:0.8rem;">
+                  <i class="bi bi-people me-1"></i>130+ Student Innovators Mentored &nbsp;·&nbsp; Design Thinking &nbsp;·&nbsp; Responsible AI
+                </p>
+
+                <div class="mt-auto">
+                  <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalNeura">
+                    <i class="bi bi-eye me-1"></i> Read More
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /IIC -->
+
+          <!-- ② President, NEURA AI Club -->
+          <div class="col-lg-6 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+
+                <div class="d-flex align-items-start mb-3">
+                  <div class="icon rounded-circle p-3 me-3 flex-shrink-0" style="background:#eef5ff;">
+                    <i class="bi bi-people-fill fs-4 text-primary"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-1" style="font-size:0.97rem; line-height:1.4;">President — NEURA: AI &amp; Tech Club</h5>
+                    <div class="fw-semibold text-primary" style="font-size:0.83rem;">MMCOE, Pune</div>
+                    <small class="text-muted">2024 – 2025</small>
+                  </div>
+                </div>
+
+                <div class="mb-2">
+                  <span class="badge bg-primary me-1" style="font-size:0.72rem;">Club President</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">AI Community</span>
+                  <span class="badge bg-secondary ms-1" style="font-size:0.72rem;">Events</span>
+                </div>
+
+                <p class="card-text" style="font-size:0.9rem;">
+                  Led a community of <strong>100+ students</strong> as President of NEURA — the official AI &amp; Tech Club of MMCOE. Drove club strategy, organised <strong>3 major campus events</strong>, and mentored members through AI research projects, national hackathons, and interdisciplinary collaboration across engineering departments.
+                </p>
+
+                <p class="text-muted mb-3" style="font-size:0.8rem;">
+                  <i class="bi bi-people me-1"></i>100+ Members &nbsp;·&nbsp; 3 Major Events &nbsp;·&nbsp; Hackathon Mentorship &nbsp;·&nbsp; Research Guidance
+                </p>
+
+                <div class="mt-auto">
+                  <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalNeura">
+                    <i class="bi bi-eye me-1"></i> Read More
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /NEURA -->
+
+          <!-- ③ NSS Volunteer -->
+          <div class="col-lg-6 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+
+                <div class="d-flex align-items-start mb-3">
+                  <div class="icon rounded-circle p-3 me-3 flex-shrink-0" style="background:#fff7ee;">
+                    <i class="bi bi-heart-pulse-fill fs-4" style="color:#e65c00;"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-1" style="font-size:0.97rem; line-height:1.4;">Volunteer — National Service Scheme (NSS)</h5>
+                    <div class="fw-semibold" style="font-size:0.83rem; color:#e65c00;">MMCOE, Pune</div>
+                    <small class="text-muted">2023 – 2025</small>
+                  </div>
+                </div>
+
+                <div class="mb-2">
+                  <span class="badge me-1" style="background:#e65c00; font-size:0.72rem;">Community Service</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">Digital Literacy</span>
+                  <span class="badge bg-secondary ms-1" style="font-size:0.72rem;">Health Awareness</span>
+                </div>
+
+                <p class="card-text" style="font-size:0.9rem;">
+                  Organised digital literacy and education drives across rural schools, impacting <strong>300+ students</strong>. Assisted in health awareness campaigns and environmental clean-up programmes benefiting <strong>500+ community members</strong>. Contributed to meaningful social outreach beyond the campus environment.
+                </p>
+
+                <p class="text-muted mb-3" style="font-size:0.8rem;">
+                  <i class="bi bi-people me-1"></i>300+ Students Reached &nbsp;·&nbsp; 500+ Community Members &nbsp;·&nbsp; Rural Outreach
+                </p>
+
+                <div class="mt-auto">
+                  <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalNSS">
+                    <i class="bi bi-eye me-1"></i> Read More
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /NSS -->
+
+          <!-- ④ Orphanage & Elder Care Volunteering -->
+          <div class="col-lg-6 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+
+                <div class="d-flex align-items-start mb-3">
+                  <div class="icon rounded-circle p-3 me-3 flex-shrink-0" style="background:#eefef6;">
+                    <i class="bi bi-house-heart-fill fs-4 text-success"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-1" style="font-size:0.97rem; line-height:1.4;">Volunteer — Orphanage &amp; Elder Care</h5>
+                    <div class="fw-semibold text-success" style="font-size:0.83rem;">Pune Region</div>
+                    <small class="text-muted">2023 – 2024</small>
+                  </div>
+                </div>
+
+                <div class="mb-2">
+                  <span class="badge bg-success me-1" style="font-size:0.72rem;">Social Good</span>
+                  <span class="badge bg-secondary" style="font-size:0.72rem;">STEM Outreach</span>
+                  <span class="badge bg-secondary ms-1" style="font-size:0.72rem;">Education</span>
+                </div>
+
+                <p class="card-text" style="font-size:0.9rem;">
+                  Supported education and recreational programmes at local orphanages, benefiting <strong>50+ children</strong>. Initiated weekend learning sessions in basic computer literacy and STEM awareness for underprivileged youth — directly applying technical skills to create social value beyond the workplace.
+                </p>
+
+                <p class="text-muted mb-3" style="font-size:0.8rem;">
+                  <i class="bi bi-people me-1"></i>50+ Children &nbsp;·&nbsp; Computer Literacy &nbsp;·&nbsp; STEM Awareness &nbsp;·&nbsp; Weekend Sessions
+                </p>
+
+                <div class="mt-auto">
+                  <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalNSS">
+                    <i class="bi bi-eye me-1"></i> Read More
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /Orphanage -->
+
+        </div><!-- /row -->
+      </div><!-- /container -->
+
+    </section><!-- /Leadership & Community Involvement Section -->
 
 
 
@@ -814,7 +1381,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Here's what my professors, mentors, and industry experts have to say about my work and dedication in AI, Data Science, and machine learning.</p>
+        <p>What professors, research supervisors, and industry mentors have said about my work in AI, Data Science, and research.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -824,9 +1391,7 @@
             {
               "loop": true,
               "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
+              "autoplay": { "delay": 5000 },
               "slidesPerView": "auto",
               "pagination": {
                 "el": ".swiper-pagination",
@@ -834,83 +1399,70 @@
                 "clickable": true
               },
               "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
+                "320": { "slidesPerView": 1, "spaceBetween": 40 },
+                "1200": { "slidesPerView": 3, "spaceBetween": 1 }
               }
             }
           </script>
+
           <div class="swiper-wrapper">
 
+            <!-- ① Prof. Benslimane — Avignon University, France (highest external credibility) -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>"Sumit Kolpe has consistently demonstrated exceptional academic performance and a strong grasp of AI and Data Science concepts. His dedication, leadership, and innovative thinking in academic and research projects have been truly commendable. Recognizing his outstanding contributions and consistent excellence, our department honored him with the title of “Pioneer of AI & Data Science.” Sumit continues to inspire his peers through his curiosity, discipline, and passion for technological advancement."</span>
+                  <span>During his international research internship under my supervision, Sumit displayed remarkable research aptitude, technical precision, and intellectual curiosity. He made significant contributions to our 6G network security project, applying advanced machine learning techniques and simulation tools including OMNeT++ and Simu5G. His ability to understand complex systems, propose innovative solutions, and deliver tangible research outcomes reflects a deep understanding of AI and Data Science. His professionalism and collaborative mindset make him an outstanding researcher with immense potential for academic and industrial innovation.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/test-3.jpg" class="testimonial-img" alt="Prof. Abderrahim Benslimane">
                 <h3>
-      <a href="https://www.linkedin.com/in/dr-manisha-dhage-622601255/?originalSubdomain=in" 
-         target="_blank" 
-         rel="noopener noreferrer"
-         style="text-decoration: none; color: inherit;">
-        Dr. Manisha Dhage
-      </a>
-    </h3>
-                <h4>Head of Department, AI & Data Science</h4>
+                  <a href="https://abderrahimbenslimane.org/" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:inherit;">
+                    Prof. Abderrahim Benslimane
+                  </a>
+                </h3>
+                <h4>Professor of Computer Science, University of Avignon, France</h4>
+                <h4>IEEE VTS Distinguished Lecturer</h4>
               </div>
             </div><!-- End testimonial item -->
 
+            <!-- ② Trapti Singhal — Infosys (industry) -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Sumit’s internship at Infosys was marked by his exceptional ability to analyze complex problems and develop innovative, data-driven solutions. His work on AI modeling and demand forecasting demonstrated strong technical expertise and a deep understanding of business applications of machine learning. Sumit consistently delivered high-quality results ahead of deadlines, showcasing not only his analytical skills but also his professionalism and commitment to excellence. His innovative mindset and proactive approach made a measurable impact on project outcomes and set a high standard for future interns.</span>
+                  <span>Sumit's internship at Infosys was marked by his exceptional ability to analyse complex problems and develop innovative, data-driven solutions. His work on AI modelling and demand forecasting demonstrated strong technical expertise and a deep understanding of business applications of machine learning. Sumit consistently delivered high-quality results ahead of deadlines, showcasing not only his analytical skills but also his professionalism and commitment to excellence. His innovative mindset and proactive approach made a measurable impact on project outcomes and set a high standard for future interns.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="Trapti Singhal">
                 <h3>
-      <a href="https://www.linkedin.com/in/trapti-singhal1903/?originalSubdomain=in" 
-         target="_blank" 
-         rel="noopener noreferrer"
-         style="text-decoration: none; color: inherit;">
-        Trapti Singhal
-      </a>
-    </h3>
-                <h4>Data Scientist - AI Project Mentor, Infosys</h4>
+                  <a href="https://www.linkedin.com/in/trapti-singhal1903/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:inherit;">
+                    Trapti Singhal
+                  </a>
+                </h3>
+                <h4>Data Scientist &amp; AI Project Mentor, Infosys</h4>
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-wrapper">
-
+            <!-- ③ Dr. Manisha Dhage — HoD, MMCOE (academic) -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>"During his international research internship under my supervision, Sumit Kolpe displayed remarkable research aptitude, technical precision, and intellectual curiosity. He made significant contributions to our project focused on 6G network security, where he effectively applied advanced machine learning techniques and simulation tools like OMNeT++ and Simu5G. Sumit’s ability to understand complex systems, propose innovative solutions, and deliver tangible research outcomes reflects a deep understanding of Artificial Intelligence and Data Science principles. His professionalism, collaborative mindset, and commitment to excellence make him an outstanding researcher with immense potential for academic and industrial innovation."</span>
+                  <span>Sumit Kolpe has consistently demonstrated exceptional academic performance and a strong grasp of AI and Data Science concepts. His dedication, leadership, and innovative thinking in academic and research projects have been truly commendable. Recognising his outstanding contributions and consistent excellence, our department honoured him with the title of "Pioneer of AI &amp; Data Science." Sumit continues to inspire his peers through his curiosity, discipline, and passion for technological advancement.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/test-3.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="Dr. Manisha Dhage">
                 <h3>
-      <a href="https://abderrahimbenslimane.org/" 
-         target="_blank" 
-         rel="noopener noreferrer"
-         style="text-decoration: none; color: inherit;">
-        Prof. Abderrahim Benslimane
-      </a>
-    </h3>
-                <h4>Professor of Computer Science, University of Avignon, France.</h4>
-                <h4>IEEE VTS Distinguished Lecturer.</h4>
+                  <a href="https://www.linkedin.com/in/dr-manisha-dhage-622601255/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:inherit;">
+                    Dr. Manisha Dhage
+                  </a>
+                </h3>
+                <h4>Head of Department, AI &amp; Data Science — MMCOE, Pune</h4>
               </div>
             </div><!-- End testimonial item -->
 
-          </div>
+          </div><!-- /swiper-wrapper -->
           <div class="swiper-pagination"></div>
         </div>
 
@@ -918,55 +1470,178 @@
 
     </section><!-- /Testimonials Section -->
 
+
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Feel free to reach out to me for job opportunities, internships, or collaboration in AI & Data Science projects.</p>
+        <p>Open to full-time roles, research collaborations, and internships in AI &amp; Data Science. Based in Pune, India — relocating to Philadelphia, PA for my MSE at the University of Pennsylvania in Fall 2025.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <!-- ── Row 1: Info cards ── -->
+        <div class="row gy-3 mb-4">
 
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Karvenagar Pune, India - 411052</p>
+          <!-- Location -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card shadow-sm h-100">
+              <div class="card-body d-flex align-items-start gap-3">
+                <div class="flex-shrink-0" style="width:40px; height:40px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                  <i class="bi bi-geo-alt-fill text-primary"></i>
                 </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Call Me</h3>
-                  <p>+91 8378990108</p>
+                  <h6 class="mb-1">Location</h6>
+                  <p class="mb-0 text-muted" style="font-size:0.86rem;">
+                    Pune, India 🇮🇳<br>
+                    <span class="text-primary fw-semibold">→ Philadelphia, PA 🇺🇸</span><br>
+                    <span style="font-size:0.78rem;">UPenn MSE · Fall 2025</span>
+                  </p>
                 </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Me</h3>
-                  <p>sumitkolpe1008@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              
+              </div>
             </div>
           </div>
 
-          
+          <!-- Email -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card shadow-sm h-100">
+              <div class="card-body d-flex align-items-start gap-3">
+                <div class="flex-shrink-0" style="width:40px; height:40px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                  <i class="bi bi-envelope-fill text-primary"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1">Email</h6>
+                  <p class="mb-0 text-muted" style="font-size:0.86rem;">
+                    <a href="mailto:sumitkolpe1008@gmail.com" style="text-decoration:none; color:inherit;">sumitkolpe1008@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        </div>
+          <!-- Phone -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card shadow-sm h-100">
+              <div class="card-body d-flex align-items-start gap-3">
+                <div class="flex-shrink-0" style="width:40px; height:40px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                  <i class="bi bi-telephone-fill text-primary"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1">Phone</h6>
+                  <p class="mb-0 text-muted" style="font-size:0.86rem;">
+                    <a href="tel:+918378990108" style="text-decoration:none; color:inherit;">+91 8378990108</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      </div>
+          <!-- Availability -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card shadow-sm h-100">
+              <div class="card-body d-flex align-items-start gap-3">
+                <div class="flex-shrink-0" style="width:40px; height:40px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                  <i class="bi bi-briefcase-fill text-primary"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1">Availability</h6>
+                  <p class="mb-0 text-muted" style="font-size:0.86rem;">
+                    Open to: <span class="text-success fw-semibold">Full-time</span>, Research &amp; Internships<br>
+                    <span style="font-size:0.78rem;">AI · Data Science · ML Engineering</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /info row -->
+
+        <!-- ── Row 2: Connect card + LinkedIn preview ── -->
+        <div class="row gy-4">
+
+          <!-- Connect with me -->
+          <div class="col-lg-8">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h6 class="mb-1">Connect with me</h6>
+                <p class="text-muted mb-3" style="font-size:0.85rem;">Reach out through any of the channels below — I typically respond within 24 hours.</p>
+                <div class="d-flex flex-wrap gap-2">
+
+                  <a href="https://www.linkedin.com/in/sumitkolpe1008/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-linkedin me-1"></i> LinkedIn
+                  </a>
+
+                  <a href="mailto:sumitkolpe1008@gmail.com" class="btn btn-outline-primary btn-sm">
+                    <i class="bi bi-envelope me-1"></i> Send Email
+                  </a>
+
+                  <a href="https://wa.me/qr/C22YNP55MTIWJ1" target="_blank" rel="noopener noreferrer" class="btn btn-outline-success btn-sm">
+                    <i class="bi bi-whatsapp me-1"></i> WhatsApp
+                  </a>
+
+                  <a href="https://www.instagram.com/sumitkolpe1008/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm">
+                    <i class="bi bi-instagram me-1"></i> Instagram
+                  </a>
+
+                  <a href="assets/docs/Sumit_Kolpe_Resume.pdf" class="btn btn-outline-secondary btn-sm" download>
+                    <i class="bi bi-download me-1"></i> Download Résumé
+                  </a>
+
+                </div>
+
+                <hr class="my-3">
+
+                <!-- Quick bio for context -->
+                <div class="d-flex align-items-start gap-3">
+                  <img src="assets/img/my-profile-img.jpg" alt="Sumit Kolpe"
+                       class="rounded-circle flex-shrink-0"
+                       style="width:52px; height:52px; object-fit:cover; border:2px solid #cfe2ff;">
+                  <div>
+                    <div class="fw-semibold" style="font-size:0.92rem;">Sumit Pradeep Kolpe</div>
+                    <div class="text-muted" style="font-size:0.82rem;">AI &amp; Data Science Engineer · Incoming MSE @ University of Pennsylvania</div>
+                    <div class="text-muted" style="font-size:0.80rem; margin-top:2px;">
+                      🏆 Aegis Graham Bell Award · 📜 Indian Patent · 🌍 International Hackathon Finalist
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /col-lg-8 -->
+
+          <!-- Quick links / CTA card -->
+          <div class="col-lg-4">
+            <div class="card shadow-sm h-100" style="background:#f8f9fa;">
+              <div class="card-body d-flex flex-column">
+                <h6 class="mb-3"><i class="bi bi-lightning-fill text-primary me-2"></i>Quick Actions</h6>
+
+                <div class="d-grid gap-2 flex-grow-1">
+                  <a href="assets/docs/Sumit_Kolpe_Resume.pdf" class="btn btn-primary btn-sm" download>
+                    <i class="bi bi-download me-1"></i> Download Résumé
+                  </a>
+                  <a href="index.html#portfolio" class="btn btn-outline-primary btn-sm">
+                    <i class="bi bi-folder me-1"></i> View Projects
+                  </a>
+                  <a href="index.html#services" class="btn btn-outline-primary btn-sm">
+                    <i class="bi bi-trophy me-1"></i> View Achievements
+                  </a>
+                  <a href="index.html#resume" class="btn btn-outline-secondary btn-sm">
+                    <i class="bi bi-file-earmark-text me-1"></i> View Full Résumé
+                  </a>
+                  <a href="https://www.linkedin.com/in/sumitkolpe1008/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm">
+                    <i class="bi bi-linkedin me-1"></i> Connect on LinkedIn
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /col-lg-4 -->
+
+        </div><!-- /row 2 -->
+
+      </div><!-- /container -->
 
     </section><!-- /Contact Section -->
 
@@ -1150,11 +1825,7 @@
         <p class="mb-2"><strong>Impact:</strong> Democratizes access to quality training and reduces injury risk via automated form correction.</p>
 
         <!-- Open Gallery Button -->
-        <div class="text-center my-3">
-          <button id="openFitGallery" class="btn btn-outline-primary">
-            <i class="bi bi-images me-1"></i> Open Gallery
-          </button>
-        </div>
+        
 
         <!-- hidden gallery anchors -->
         <div style="display:none;">

@@ -1,63 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Achievement — Best Innovator of Maharashtra | Sumit Kolape</title>
-  <meta content="Achievement details for Best Innovator of Maharashtra" name="description">
-  <meta content="achievement, award, innovator, Sumit Kolape" name="keywords">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achievement — Best Innovator of Maharashtra | Sumit Kolpe</title>
+  <meta name="description" content="Best Innovator of Maharashtra — IDE Bootcamp, AICTE & Ministry of Education, Government of India" />
+  <meta name="keywords" content="achievement, best innovator, Maharashtra, IDE Bootcamp, AICTE, Ministry of Education, Sumit Kolpe" />
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet" />
 
   <style>
-    /* Page-specific styles */
-    .page-title.dark-background { padding: 24px 0; background: #0f1724; color: #fff; }
-    .page-title .breadcrumbs a { color: rgba(255,255,255,0.85); }
-    .achievement-hero { border-radius: 12px; overflow: hidden; }
-    .achievement-slide { width:100%; height:60vh; object-fit:cover; display:block; }
-    @media (max-width: 992px) { .achievement-slide { height:45vh; } }
-    @media (max-width: 576px) { .achievement-slide { height:35vh; } }
+    /* ── Swiper image sizing ── */
+    .achievement-slide {
+      width: 100%;
+      height: 68vh;
+      object-fit: cover;
+      display: block;
+    }
+    @media (max-width: 992px) { .achievement-slide { height: 50vh; } }
+    @media (max-width: 576px) { .achievement-slide { height: 38vh; } }
 
-    .achievement-info h3 { margin-top: 0; }
-    .action-toolbar { right: 16px; top: 16px; z-index: 10; position: absolute; }
-    .cert-preview-toolbar { position: absolute; right: 12px; top: 8px; z-index: 1200; }
-    .cert-iframe { width:100%; height:75vh; border:0; }
-    .floating-actions { position: fixed; right: 18px; bottom: 24px; z-index: 1200; display: flex; gap: .5rem; flex-direction: column; }
-    .floating-actions .btn { min-width: 170px; white-space: nowrap; }
-    .section .card-body h5 { margin-top: 0.5rem; }
+    /* ── Sticky sidebar ── */
+    .achievement-info-card {
+      position: sticky;
+      top: 80px;
+    }
+
+    /* ── Meta list ── */
+    .meta-list li {
+      padding: 0.45rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.92rem;
+    }
+    .meta-list li:last-child { border-bottom: none; }
+
+    /* ── Certificate modal iframe ── */
+    .cert-iframe { width: 100%; height: 75vh; border: 0; }
+
+    /* ── Floating action buttons (mobile only) ── */
+    .floating-actions {
+      position: fixed;
+      right: 18px;
+      bottom: 24px;
+      z-index: 1100;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .floating-actions .btn { min-width: 180px; white-space: nowrap; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    @media (min-width: 992px) { .floating-actions { display: none; } }
+
+    /* ── Page-title action buttons ── */
+    .page-title-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    @media (min-width: 992px) { .page-title-actions { margin-top: 0; } }
+
+    /* ── Highlight badge pills ── */
+    .highlight-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #eef5ff;
+      border: 1px solid #cfe2ff;
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: #0a58ca;
+    }
   </style>
 </head>
 
 <body class="service-details-page">
 
-  <!-- Header -->
+  <!-- ══════════════════ HEADER ══════════════════ -->
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
+
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="Profile Image" class="img-fluid rounded-circle">
+      <img src="assets/img/my-profile-img.jpg" alt="Sumit Kolpe" class="img-fluid rounded-circle" />
     </div>
+
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Sumit Kolape</h1>
+      <h1 class="sitename">Sumit Kolpe</h1>
     </a>
+
     <div class="social-links text-center">
       <a href="https://www.linkedin.com/in/sumitkolpe1008/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       <a href="https://wa.me/qr/C22YNP55MTIWJ1" class="Whatsapp"><i class="bi bi-whatsapp"></i></a>
@@ -66,220 +114,313 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
         <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="index.html#portfolio"><i class="bi bi-folder navicon"></i> Projects</a></li>
         <li><a href="index.html#internships"><i class="bi bi-briefcase navicon"></i> Internships</a></li>
         <li><a href="index.html#patent"><i class="bi bi-award navicon"></i> Patent</a></li>
         <li><a href="index.html#services"><i class="bi bi-trophy navicon"></i> Achievements</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="index.html#certificate"><i class="bi bi-patch-check-fill navicon"></i> Certifications</a></li>
         <li><a href="index.html#leadership"><i class="bi bi-people-fill navicon"></i> Leadership</a></li>
         <li><a href="index.html#testimonials"><i class="bi bi-chat-text navicon"></i> Testimonials</a></li>
         <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
     </nav>
-  </header>
-  <!-- End Header -->
+  </header><!-- /Header -->
 
   <main class="main">
-    <!-- Page Title -->
-    <div class="page-title dark-background">
-      <div class="container d-lg-flex justify-content-between align-items-center position-relative">
-        <div>
-          <h1 class="mb-2 mb-lg-0">Achievement — Best Innovator of Maharashtra</h1>
-          <nav class="breadcrumbs">
-            <ol>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#services">Achievements</a></li>
-              <li class="current">Best Innovator of Maharashtra</li>
-            </ol>
-          </nav>
-        </div>
 
-        <!-- Top-right action toolbar -->
-        <div class="action-toolbar">
-          <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalCertificate" id="openCertBtn">
-            <i class="bi bi-award me-1"></i> View certificate / credential
-          </button>
-          <a href="assets/docs/innovator.pdf" class="btn btn-light btn-sm" download>
-            <i class="bi bi-download me-1"></i> Download certificate
-          </a>
+    <!-- ══════════════════ PAGE TITLE ══════════════════ -->
+    <div class="page-title dark-background">
+      <div class="container">
+        <div class="d-lg-flex justify-content-between align-items-center">
+
+          <!-- Left: title + breadcrumb -->
+          <div>
+            <h1 class="mb-1">Best Innovator of Maharashtra</h1>
+            <p class="mb-2 text-white-50" style="font-size:0.95rem;">IDE Bootcamp · AICTE &amp; Ministry of Education, Government of India</p>
+            <nav class="breadcrumbs">
+              <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Achievements</a></li>
+                <li class="current">Best Innovator of Maharashtra</li>
+              </ol>
+            </nav>
+          </div>
+
+          <!-- Right: action buttons (desktop) -->
+          <div class="page-title-actions">
+            <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalCertificate">
+              <i class="bi bi-award me-1"></i> View Certificate
+            </button>
+            <a href="assets/docs/innovator.pdf" class="btn btn-light btn-sm" download>
+              <i class="bi bi-download me-1"></i> Download Certificate
+            </a>
+          </div>
+
         </div>
       </div>
-    </div>
+    </div><!-- /Page Title -->
 
-    <!-- Achievement Details -->
+    <!-- ══════════════════ ACHIEVEMENT DETAILS ══════════════════ -->
     <section id="achievement-details" class="service-details section">
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
-          <!-- Slider column -->
+
+          <!-- ── LEFT: Image Slider + context ── -->
           <div class="col-lg-8">
-            <div class="achievement-hero">
-              <div class="swiper achievement-swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="assets/img/services.jpg" alt="IDE Bootcamp - award" class="achievement-slide">
+
+            <!-- Swiper -->
+            <div class="swiper achievement-swiper" style="border-radius:12px; overflow:hidden;">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/img/services.jpg" alt="IDE Bootcamp — Best Innovator of Maharashtra award" class="achievement-slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/ser3.jpg" alt="IDE Bootcamp — mentoring and design thinking session" class="achievement-slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/ser2.jpeg" alt="IDE Bootcamp — award ceremony" class="achievement-slide" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+
+            <!-- Context below slider -->
+            <div class="mt-4">
+              <h4 class="mb-3">About the Award</h4>
+              <p>
+                The <strong>Best Innovator of Maharashtra</strong> title was awarded during the
+                <strong>IDE (Innovation, Design & Entrepreneurship) Bootcamp (Phase 1, Edition 2)</strong> — a national innovation programme
+                jointly organised by <strong>AICTE and the Ministry of Education, Government of India</strong>.
+                The bootcamp brings together the top student innovators from across Maharashtra and India to
+                refine ideas, receive expert mentorship, and compete on the basis of innovation depth, social
+                impact, and technical feasibility.
+              </p>
+              <p>
+                Sumit was selected for this recognition for his work on AI-driven solutions that address
+                real-world societal challenges. The IDE Bootcamp process involved multiple rounds of
+                design thinking, market gap analysis, entrepreneurship training, and structured evaluation
+                by industry and policy experts — making the recognition highly competitive and
+                institutionally credible.
+              </p>
+              <p>
+                This award by the <strong>Ministry of Education</strong> adds to a pattern of
+                government-level recognition — alongside the <strong>AICTE research grant</strong> for
+                Saheli and the <strong>National Aegis Graham Bell Award</strong> from the Ministry of
+                Electronics &amp; IT — establishing Sumit's AI work as policy-relevant and
+                deployment-ready at scale.
+              </p>
+            </div>
+
+          </div><!-- /col-lg-8 -->
+
+          <!-- ── RIGHT: Info Sidebar ── -->
+          <div class="col-lg-4">
+            <div class="achievement-info-card">
+
+              <!-- Award overview card -->
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="flex-shrink-0" style="width:48px; height:48px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                      <i class="bi bi-award-fill text-primary fs-4"></i>
+                    </div>
+                    <div>
+                      <h5 class="mb-0">Best Innovator of Maharashtra</h5>
+                      <small class="text-muted">IDE Bootcamp · Govt. of India</small>
+                    </div>
                   </div>
-                  <div class="swiper-slide">
-                    <img src="assets/img/ser3.jpg" alt="IDE Bootcamp - mentoring" class="achievement-slide">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="assets/img/ser2.jpeg" alt="IDE Bootcamp - award ceremony" class="achievement-slide">
+
+                  <hr class="my-3">
+
+                  <ul class="list-unstyled meta-list mb-0">
+                    <li>
+                      <i class="bi bi-calendar-event text-primary me-2"></i>
+                      <strong>Programme:</strong> &nbsp;&nbsp;IDE Bootcamp
+                    </li>
+                    <li>
+                      <i class="bi bi-building text-primary me-2"></i>
+                      <strong>Organised by:</strong> &nbsp;&nbsp; Ministry of Education
+                    </li>
+                    <li>
+                      <i class="bi bi-geo-alt text-primary me-2"></i>
+                      <strong>Scope:</strong> &nbsp;&nbsp;Maharashtra State Level
+                    </li>
+                    
+                    <li>
+                      <i class="bi bi-lightbulb text-primary me-2"></i>
+                      <strong>Focus:</strong>&nbsp;&nbsp; Applied AI 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Key Highlights card -->
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                  <h6 class="card-title mb-3"><i class="bi bi-star-fill text-warning me-2"></i>Key Highlights</h6>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Govt. of India</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> AICTE Award</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> MoE Recognition</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> State Best Innovator</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Design Thinking</span>
                   </div>
                 </div>
-                <!-- pagination + nav -->
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
               </div>
-            </div>
-          </div>
 
-          <!-- Info column -->
-          <div class="col-lg-4">
-            <div class="achievement-info">
-              <h3>Recognized as Best Innovator of Maharashtra</h3>
-              <p class="fs-6 text-justify">
-                Awarded the prestigious Best Innovator of Maharashtra title during the IDE Bootcamp (Phase 1, Edition 2),
-                organized by AICTE and the Ministry of Education, Government of India. This honor highlights innovative
-                contributions in Artificial Intelligence, recognizing exceptional problem-solving and impactful solutions.
-              </p>
-
-              <h5 class="mt-3">Event Highlights</h5>
-              <ul>
-                <li>IDE Bootcamp Phase 1, Edition 2 — expert mentorship and market gap analysis.</li>
-                <li>Focus on entrepreneurship, sustainable models and solution development.</li>
-                <li>Selection based on innovation, impact and technical feasibility.</li>
-              </ul>
-
-              <h5 class="mt-3">Impact</h5>
-              <p class="mb-0">This recognition showcases leadership in applied AI and readiness to translate prototypes into societal impact.</p>
-
-              <div class="mt-4 d-grid gap-2">
-                
-                <a href="index.html#services" class="btn btn-outline-primary">Back to Achievements</a>
+              <!-- Impact card -->
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                  <h6 class="card-title mb-2"><i class="bi bi-graph-up-arrow text-primary me-2"></i>Impact</h6>
+                  <p class="mb-0" style="font-size:0.92rem;">
+                    This recognition by India's Ministry of Education demonstrates that Sumit's AI work
+                    meets institutional standards for innovation, social impact, and entrepreneurial
+                    readiness — reinforcing his standing as a deployment-ready, policy-relevant innovator.
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Floating action buttons -->
+              <!-- Action buttons -->
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCertificate">
+                  <i class="bi bi-award me-1"></i> View Certificate
+                </button>
+                <a href="assets/docs/innovator.pdf" class="btn btn-outline-secondary" download>
+                  <i class="bi bi-download me-1"></i> Download Certificate
+                </a>
+                <a href="index.html#services" class="btn btn-light">
+                  <i class="bi bi-arrow-left me-1"></i> Back to Achievements
+                </a>
+              </div>
+
+            </div>
+          </div><!-- /col-lg-4 -->
+
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </section><!-- /Achievement Details -->
+
+    <!-- Floating actions (mobile only) -->
     <div class="floating-actions">
-      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCertificate"><i class="bi bi-award me-1"></i> View certificate</button>
-      <a href="assets/docs/innovator.pdf" class="btn btn-success" download><i class="bi bi-download me-1"></i> Download certificate</a>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCertificate">
+        <i class="bi bi-award me-1"></i> View Certificate
+      </button>
+      <a href="assets/docs/innovator.pdf" class="btn btn-success" download>
+        <i class="bi bi-download me-1"></i> Download Certificate
+      </a>
     </div>
 
-  </main>
+  </main><!-- /main -->
 
-  <!-- Certificate Modal (lazy loads PDF into iframe; includes top-right download) -->
+  <!-- ══════════════════ CERTIFICATE MODAL ══════════════════ -->
   <div class="modal fade" id="modalCertificate" tabindex="-1" aria-labelledby="modalCertificateLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalCertificateLabel">Certificate — Best Innovator of Maharashtra</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
 
-        <div class="modal-body position-relative p-3">
-          <!-- small toolbar inside preview (download) -->
-          <div class="cert-preview-toolbar">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCertificateLabel">
+            <i class="bi bi-award me-2 text-primary"></i>Certificate — Best Innovator of Maharashtra
+          </h5>
+          <div class="ms-auto me-2">
             <a id="certDownloadTop" href="assets/docs/innovator.pdf" class="btn btn-sm btn-primary" download>
               <i class="bi bi-download me-1"></i> Download
             </a>
           </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
 
-          <!-- PDF preview iframe (lazy-loaded) -->
+        <div class="modal-body p-3">
           <div style="min-height:60vh;">
-            <iframe id="certPreviewFrame" class="cert-iframe" data-src="assets/docs/innovator.pdf#view=FitH" title="Certificate preview"></iframe>
+            <iframe id="certPreviewFrame" class="cert-iframe" data-src="assets/docs/innovator.pdf#view=FitH" title="Best Innovator of Maharashtra certificate preview"></iframe>
           </div>
         </div>
 
         <div class="modal-footer">
-          <a href="#" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</a>
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
           <a id="certDownloadFooter" href="assets/docs/innovator.pdf" class="btn btn-primary" download>
-            <i class="bi bi-download me-1"></i> Download certificate
+            <i class="bi bi-download me-1"></i> Download Certificate
           </a>
         </div>
+
       </div>
     </div>
-  </div>
+  </div><!-- /Certificate Modal -->
 
-  <!-- Footer -->
+  <!-- ══════════════════ FOOTER ══════════════════ -->
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sumit Kolape</strong> <span>All Rights Reserved</span></p>
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sumit Kolpe Portfolio</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits text-center mt-2">
-        Designed by <a href="#">SK</a>
+        Designed by Sumit
       </div>
     </div>
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Initialize Swiper for the achievement slider (autoplay + loop)
+
+      // ── AOS init ──
+      if (typeof AOS !== 'undefined') {
+        AOS.init({ duration: 600, easing: 'ease-in-out', once: true, mirror: false });
+      }
+
+      // ── Swiper ──
       if (typeof Swiper !== 'undefined') {
         new Swiper('.achievement-swiper', {
           loop: true,
           speed: 700,
-          autoplay: {
-            delay: 3500,
-            disableOnInteraction: false
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-          }
+          autoplay: { delay: 3500, disableOnInteraction: false },
+          pagination: { el: '.swiper-pagination', clickable: true },
+          navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
         });
       }
 
-      // Certificate modal: lazy load PDF into iframe on show, clear on hide
-      const certModal = document.getElementById('modalCertificate');
-      const certFrame = document.getElementById('certPreviewFrame');
-      const certDownloadTop = document.getElementById('certDownloadTop');
-      const certDownloadFooter = document.getElementById('certDownloadFooter');
+      // ── Certificate modal: lazy-load PDF ──
+      const certModal  = document.getElementById('modalCertificate');
+      const certFrame  = document.getElementById('certPreviewFrame');
+      const certDlTop  = document.getElementById('certDownloadTop');
+      const certDlFoot = document.getElementById('certDownloadFooter');
 
       if (certModal && certFrame) {
-        const dataSrc = certFrame.getAttribute('data-src');
-
+        const src = certFrame.getAttribute('data-src');
         certModal.addEventListener('show.bs.modal', function () {
-          // set iframe src to lazy-load viewer
-          certFrame.src = dataSrc;
-
-          // ensure top & footer download links match the same file (in case path changes)
-          const downloadHref = dataSrc.split('#')[0];
-          certDownloadTop.href = downloadHref;
-          certDownloadFooter.href = downloadHref;
+          if (certFrame.src !== src) certFrame.src = src;
+          const dl = src.split('#')[0];
+          if (certDlTop)  certDlTop.href  = dl;
+          if (certDlFoot) certDlFoot.href = dl;
         });
-
         certModal.addEventListener('hidden.bs.modal', function () {
-          // remove src to stop any PDF rendering / free memory
           certFrame.src = '';
         });
       }
+
     });
   </script>
-</body>
 
+</body>
 </html>

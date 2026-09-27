@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Achievement — Best AI Tech Innovator (Infosys) | Sumit Kolpe</title>
-  <meta name="description" content="Best AI Tech Innovator awarded by Infosys India at the Annual AI Summit — achievement details for Sumit Kolpe" />
-  <meta name="keywords" content="achievement, Infosys, award, AI Innovator, Sumit Kolpe, Bengaluru" />
+  <title>Achievement — International, National & State Hackathon Winner | Sumit Kolpe</title>
+  <meta name="description" content="1st Prize International, 3rd PAN IIT National, 2nd State-Level Hackathon — AI solutions in healthcare and fitness" />
+  <meta name="keywords" content="achievement, hackathon, PAN IIT, international, state level, Sumit Kolpe, AI healthcare" />
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon" />
@@ -89,6 +89,38 @@
       font-weight: 500;
       color: #0a58ca;
     }
+
+    /* ── Podium rank cards ── */
+    .rank-card {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 10px;
+      padding: 18px 14px;
+      text-align: center;
+      height: 100%;
+    }
+    .rank-card .rank-badge {
+      font-size: 1.7rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .rank-card .rank-badge.gold   { color: #d4a017; }
+    .rank-card .rank-badge.bronze { color: #a0522d; }
+    .rank-card .rank-badge.silver { color: #6c757d; }
+    .rank-card .rank-label {
+      font-size: 0.78rem;
+      color: #6c757d;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+    .rank-card .rank-event {
+      font-size: 0.83rem;
+      color: #343a40;
+      font-weight: 500;
+      line-height: 1.3;
+    }
   </style>
 </head>
 
@@ -138,13 +170,13 @@
 
           <!-- Left: title + breadcrumb -->
           <div>
-            <h1 class="mb-1">Best AI Tech Innovator — Infosys</h1>
-            <p class="mb-2 text-white-50" style="font-size:0.95rem;">Annual AI Summit · Bengaluru, India · 2024</p>
+            <h1 class="mb-1">Hackathon Wins — International, National &amp; State</h1>
+            <p class="mb-2 text-white-50" style="font-size:0.95rem;">1st Prize International · 3rd PAN IIT National · 2nd State-Level · AI in Healthcare &amp; Fitness</p>
             <nav class="breadcrumbs">
               <ol>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#services">Achievements</a></li>
-                <li class="current">Infosys Award</li>
+                <li class="current">Hackathon Wins</li>
               </ol>
             </nav>
           </div>
@@ -152,10 +184,10 @@
           <!-- Right: action buttons (desktop) -->
           <div class="page-title-actions">
             <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalCertificate">
-              <i class="bi bi-award me-1"></i> View Certificate
+              <i class="bi bi-award me-1"></i> View Certificates
             </button>
-            <a href="assets/docs/Infosys_Innovator_Certificate.pdf" class="btn btn-light btn-sm" download>
-              <i class="bi bi-download me-1"></i> Download Certificate
+            <a href="assets/docs/Hackathons.pdf" class="btn btn-light btn-sm" download>
+              <i class="bi bi-download me-1"></i> Download Certificates
             </a>
           </div>
 
@@ -175,10 +207,10 @@
             <div class="swiper achievement-swiper" style="border-radius:12px; overflow:hidden;">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="assets/img/Infosys.jpg" alt="Infosys Best AI Tech Innovator Award" class="achievement-slide" />
+                  <img src="assets/img/MIT.jpeg" alt="International Hackathon — 1st Prize Healthcare Domain" class="achievement-slide" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/info.jpeg" alt="Infosys Annual AI Summit — demo presentation" class="achievement-slide" />
+                  <img src="assets/img/IIT.jpg" alt="PAN IIT National Hackathon — 3rd Rank" class="achievement-slide" />
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -186,27 +218,56 @@
               <div class="swiper-button-next"></div>
             </div>
 
-            <!-- Context below slider -->
+            <!-- Podium rank cards -->
+            <div class="row gy-3 mt-3">
+              <div class="col-md-4">
+                <div class="rank-card">
+                  <div class="rank-badge gold">🥇 1st</div>
+                  <div class="rank-label">International</div>
+                  <div class="rank-event">Healthcare Domain<br>PICT Pune Hackathon</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rank-card">
+                  <div class="rank-badge bronze">🥉 3rd</div>
+                  <div class="rank-label">National</div>
+                  <div class="rank-event">PAN IIT<br>National Hackathon</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rank-card">
+                  <div class="rank-badge silver">🥈 2nd</div>
+                  <div class="rank-label">State-Level</div>
+                  <div class="rank-event">MIT College<br>Barshi Hackathon</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Context below cards -->
             <div class="mt-4">
-  <h4 class="mb-3">About the Award</h4>
-  <p>
-    The <strong>Best AI Tech Innovator Award</strong> is presented by <strong>Infosys India</strong> at their
-    Annual AI Summit in Bengaluru — one of India's premier platforms recognizing breakthrough innovations in
-    Artificial Intelligence and real-world technology applications.
-  </p>
-  <p>
-    Sumit was honored with this award for his project <strong>FitMantra — AI-Based Virtual Gym Trainer</strong>,
-    which leverages computer vision and machine learning to deliver real-time posture correction, personalized
-    fitness guidance, and injury prevention. Competing among <strong>2500+ participants from across the country</strong>,
-    the project stood out for its innovation, scalability, and strong potential for real-world deployment in
-    fitness and healthcare domains.
-  </p>
-  <p>
-    This recognition highlights Sumit's ability to design impactful AI-driven solutions that bridge innovation
-    with practical usability — demonstrating technical excellence, entrepreneurial thinking, and a commitment
-    to solving real-world challenges through technology.
-  </p>
-</div>
+              <h4 class="mb-3">About these Achievements</h4>
+              <p>
+                Across three tiers of competition — international, national, and state — Sumit consistently
+                placed on the podium, demonstrating the ability to build and pitch compelling AI-driven
+                solutions under pressure and in front of expert evaluation panels.
+              </p>
+              <p>
+                At the <strong>International Hackathon (PICT Pune)</strong>, Sumit's team secured
+                <strong>1st Prize in the Healthcare Domain</strong> for an AI solution targeting posture
+                correction and fitness optimisation — the foundation of what became <strong>FitMantra</strong>,
+                a published Indian patent. At the <strong>PAN IIT National Hackathon</strong>, one of India's
+                most competitive student innovation events, the team earned <strong>3rd Rank</strong> for their
+                AI-powered women's safety solution — an early version of <strong>Saheli</strong>, which later
+                won the National Aegis Graham Bell Award. The <strong>State-Level Hackathon at MIT College,
+                Barshi</strong> added a <strong>2nd Place finish</strong>, further validating the technical
+                depth and cross-domain versatility of Sumit's work.
+              </p>
+              <p>
+                Together these results span healthcare, fitness, and public safety — and reflect an ability to
+                compete across domains, levels of competition, and team sizes while consistently delivering
+                solutions with real deployment potential.
+              </p>
+            </div>
 
           </div><!-- /col-lg-8 -->
 
@@ -220,11 +281,11 @@
 
                   <div class="d-flex align-items-center gap-3 mb-3">
                     <div class="flex-shrink-0" style="width:48px; height:48px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
-                      <i class="bi bi-award-fill text-primary fs-4"></i>
+                      <i class="bi bi-trophy-fill text-primary fs-4"></i>
                     </div>
                     <div>
-                      <h5 class="mb-0">Best AI Tech Innovator</h5>
-                      <small class="text-muted">Infosys India · 2024</small>
+                      <h5 class="mb-0">Hackathon Wins</h5>
+                      <small class="text-muted">International · National · State</small>
                     </div>
                   </div>
 
@@ -232,24 +293,24 @@
 
                   <ul class="list-unstyled meta-list mb-0">
                     <li>
-                      <i class="bi bi-calendar-event text-primary me-2"></i>
-                      <strong>Year:</strong>&nbsp;&nbsp; 2024
+                      <i class="bi bi-star-fill text-warning me-2"></i>
+                      <strong>International:</strong> &nbsp;&nbsp;1st Prize — Healthcare &nbsp;&nbsp;Domain, PICT Pune
                     </li>
                     <li>
-                      <i class="bi bi-building text-primary me-2"></i>
-                      <strong>Organiser:</strong>&nbsp;&nbsp; Infosys India
+                      <i class="bi bi-award text-primary me-2"></i>
+                      <strong>National:</strong> &nbsp;&nbsp;3rd Rank — PAN IIT National &nbsp;&nbsp;Hackathon
                     </li>
                     <li>
-                      <i class="bi bi-geo-alt text-primary me-2"></i>
-                      <strong>Event:</strong>&nbsp;&nbsp; Annual AI Summit
+                      <i class="bi bi-patch-check text-primary me-2"></i>
+                      <strong>State:</strong> &nbsp;&nbsp;2nd Rank — MIT College, Barshi
                     </li>
                     <li>
-                      <i class="bi bi-trophy text-primary me-2"></i>
-                      <strong>Recognition:</strong>&nbsp;&nbsp; Best AI Tech Innovator
+                      <i class="bi bi-cpu text-primary me-2"></i>
+                      <strong>Domains:</strong>&nbsp;&nbsp; Healthcare, Fitness &amp; Women's &nbsp;&nbsp;Safety
                     </li>
                     <li>
                       <i class="bi bi-lightbulb text-primary me-2"></i>
-                      <strong>For work:</strong> &nbsp;&nbsp; Fitmantra: AI Powered Virtual &nbsp;&nbsp;Gym Trainer
+                      <strong>Solutions:</strong>&nbsp;&nbsp; FitMantra (patent) &amp; Saheli&nbsp;&nbsp; (Aegis Award)
                     </li>
                   </ul>
                 </div>
@@ -260,38 +321,35 @@
                 <div class="card-body">
                   <h6 class="card-title mb-3"><i class="bi bi-star-fill text-warning me-2"></i>Key Highlights</h6>
                   <div class="d-flex flex-wrap gap-2">
-                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Industry Award</span>
-                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Infosys India</span>
-                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> +60% Accuracy</span>
-                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Ethical AI</span>
-                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Production ML</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> 1st International</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> 3rd PAN IIT</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> 2nd State</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> AI Healthcare</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Led to Patent</span>
                   </div>
                 </div>
               </div>
 
-             <!-- Impact card -->
-<div class="card shadow-sm mb-4">
-  <div class="card-body">
-    <h6 class="card-title mb-2">
-      <i class="bi bi-graph-up-arrow text-primary me-2"></i>Impact
-    </h6>
-    <p class="mb-0" style="font-size:0.92rem;">
-      Recognised for developing an AI-powered fitness solution with real-world applicability, achieving
-      ~60% improvement in posture accuracy and demonstrating strong potential for scalable deployment
-      in gyms, home fitness systems, and digital health platforms. The innovation reflects a blend of
-      technical excellence, user-centric design, and impactful problem-solving in the healthcare and
-      fitness domain.
-    </p>
-  </div>
-</div>
+              <!-- Impact card -->
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                  <h6 class="card-title mb-2"><i class="bi bi-graph-up-arrow text-primary me-2"></i>Impact</h6>
+                  <p class="mb-0" style="font-size:0.92rem;">
+                    These wins directly seeded two live, nationally recognised platforms — FitMantra
+                    (published patent) and Saheli (National Aegis Graham Bell Award) — demonstrating
+                    the ability to take competition-grade prototypes all the way to production and
+                    institutional recognition.
+                  </p>
+                </div>
+              </div>
 
               <!-- Action buttons -->
               <div class="d-grid gap-2">
                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCertificate">
-                  <i class="bi bi-award me-1"></i> View Certificate
+                  <i class="bi bi-award me-1"></i> View Certificates
                 </button>
-                <a href="assets/docs/Infosys_Innovator_Certificate.pdf" class="btn btn-outline-secondary" download>
-                  <i class="bi bi-download me-1"></i> Download Certificate
+                <a href="assets/docs/Hackathons.pdf" class="btn btn-outline-secondary" download>
+                  <i class="bi bi-download me-1"></i> Download Certificates
                 </a>
                 <a href="index.html#services" class="btn btn-light">
                   <i class="bi bi-arrow-left me-1"></i> Back to Achievements
@@ -308,10 +366,10 @@
     <!-- Floating actions (mobile only) -->
     <div class="floating-actions">
       <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCertificate">
-        <i class="bi bi-award me-1"></i> View Certificate
+        <i class="bi bi-award me-1"></i> View Certificates
       </button>
-      <a href="assets/docs/Infosys_Innovator_Certificate.pdf" class="btn btn-success" download>
-        <i class="bi bi-download me-1"></i> Download Certificate
+      <a href="assets/docs/Hackathons.pdf" class="btn btn-success" download>
+        <i class="bi bi-download me-1"></i> Download Certificates
       </a>
     </div>
 
@@ -324,10 +382,10 @@
 
         <div class="modal-header">
           <h5 class="modal-title" id="modalCertificateLabel">
-            <i class="bi bi-award me-2 text-primary"></i>Certificate — Infosys Best AI Tech Innovator
+            <i class="bi bi-award me-2 text-primary"></i>Hackathon Excellence Certificates
           </h5>
           <div class="ms-auto me-2">
-            <a id="certDownloadTop" href="assets/docs/Infosys_Innovator_Certificate.pdf" class="btn btn-sm btn-primary" download>
+            <a id="certDownloadTop" href="assets/docs/Hackathons.pdf" class="btn btn-sm btn-primary" download>
               <i class="bi bi-download me-1"></i> Download
             </a>
           </div>
@@ -336,14 +394,14 @@
 
         <div class="modal-body p-3">
           <div style="min-height:60vh;">
-            <iframe id="certPreviewFrame" class="cert-iframe" data-src="assets/docs/Infosys_Innovator_Certificate.pdf#view=FitH" title="Certificate preview"></iframe>
+            <iframe id="certPreviewFrame" class="cert-iframe" data-src="assets/docs/Hackathons.pdf#view=FitH" title="Hackathon certificates preview"></iframe>
           </div>
         </div>
 
         <div class="modal-footer">
           <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-          <a id="certDownloadFooter" href="assets/docs/Infosys_Innovator_Certificate.pdf" class="btn btn-primary" download>
-            <i class="bi bi-download me-1"></i> Download Certificate
+          <a id="certDownloadFooter" href="assets/docs/Hackathons.pdf" class="btn btn-primary" download>
+            <i class="bi bi-download me-1"></i> Download Certificates
           </a>
         </div>
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Achievement — Aegis Graham Bell Award | Sumit Kolpe</title>
-  <meta name="description" content="Aegis Graham Bell Award — Achievement details" />
+  <meta name="description" content="Aegis Graham Bell Award — Achievement details for Sumit Kolpe" />
   <meta name="keywords" content="achievement, Aegis Graham Bell, award, Saheli, Sumit Kolpe" />
 
   <!-- Favicons -->
@@ -14,47 +14,102 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
 
   <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
   <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet" />
 
   <style>
-    /* Page-specific styles (consistent with other achievement pages) */
-    .page-title.dark-background { padding: 24px 0; background: #0f1724; color: #fff; }
-    .page-title .breadcrumbs a { color: rgba(255,255,255,0.85); }
-    .achievement-hero { border-radius: 12px; overflow: hidden; }
-    .achievement-slide { width:100%; height:70vh; object-fit:cover; display:block; }
-    @media (max-width: 992px) { .achievement-slide { height:50vh; } }
-    @media (max-width: 576px) { .achievement-slide { height:40vh; } }
+    /* ── Swiper image sizing ── */
+    .achievement-slide {
+      width: 100%;
+      height: 68vh;
+      object-fit: cover;
+      display: block;
+      border-radius: 0;
+    }
+    @media (max-width: 992px) { .achievement-slide { height: 50vh; } }
+    @media (max-width: 576px) { .achievement-slide { height: 38vh; } }
 
-    .achievement-info h3 { margin-top: 0; }
-    .action-toolbar { right: 16px; top: 16px; z-index: 10; position: absolute; }
-    .cert-preview-toolbar { position: absolute; right: 12px; top: 8px; z-index: 1200; }
-    .cert-iframe { width:100%; height:75vh; border:0; }
-    .floating-actions { position: fixed; right: 18px; bottom: 24px; z-index: 1200; display: flex; gap: .5rem; flex-direction: column; }
-    .floating-actions .btn { min-width: 170px; white-space: nowrap; }
-    .section .card-body h5 { margin-top: 0.5rem; }
-    .meta-list li { margin-bottom: .4rem; }
+    /* ── Info sidebar ── */
+    .achievement-info-card {
+      position: sticky;
+      top: 80px;
+    }
+
+    /* ── Meta list ── */
+    .meta-list li {
+      padding: 0.45rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.92rem;
+    }
+    .meta-list li:last-child { border-bottom: none; }
+
+    /* ── Certificate modal iframe ── */
+    .cert-iframe { width: 100%; height: 75vh; border: 0; }
+
+    /* ── Floating action buttons (mobile helper) ── */
+    .floating-actions {
+      position: fixed;
+      right: 18px;
+      bottom: 24px;
+      z-index: 1100;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .floating-actions .btn { min-width: 180px; white-space: nowrap; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+
+    @media (min-width: 992px) { .floating-actions { display: none; } }
+
+    /* ── Action toolbar inside page-title ── */
+    .page-title-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    @media (min-width: 992px) {
+      .page-title-actions { margin-top: 0; }
+    }
+
+    /* ── Highlight badge pills ── */
+    .highlight-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #eef5ff;
+      border: 1px solid #cfe2ff;
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: #0a58ca;
+    }
   </style>
 </head>
+
 <body class="service-details-page">
 
-  <!-- Header -->
+  <!-- ══════════════════ HEADER ══════════════════ -->
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
+
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="Profile Image" class="img-fluid rounded-circle" />
+      <img src="assets/img/my-profile-img.jpg" alt="Sumit Kolpe" class="img-fluid rounded-circle" />
     </div>
+
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <h1 class="sitename">Sumit Kolpe</h1>
     </a>
+
     <div class="social-links text-center">
       <a href="https://www.linkedin.com/in/sumitkolpe1008/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       <a href="https://wa.me/qr/C22YNP55MTIWJ1" class="Whatsapp"><i class="bi bi-whatsapp"></i></a>
@@ -63,182 +118,313 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
         <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="index.html#portfolio"><i class="bi bi-folder navicon"></i> Projects</a></li>
         <li><a href="index.html#internships"><i class="bi bi-briefcase navicon"></i> Internships</a></li>
         <li><a href="index.html#patent"><i class="bi bi-award navicon"></i> Patent</a></li>
         <li><a href="index.html#services"><i class="bi bi-trophy navicon"></i> Achievements</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="index.html#certificate"><i class="bi bi-patch-check-fill navicon"></i> Certifications</a></li>
         <li><a href="index.html#leadership"><i class="bi bi-people-fill navicon"></i> Leadership</a></li>
         <li><a href="index.html#testimonials"><i class="bi bi-chat-text navicon"></i> Testimonials</a></li>
         <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
     </nav>
-  </header>
+  </header><!-- /Header -->
 
   <main class="main">
-     <!-- Page Title -->
+
+    <!-- ══════════════════ PAGE TITLE ══════════════════ -->
     <div class="page-title dark-background">
-      <div class="container d-lg-flex justify-content-between align-items-center position-relative">
-        <div>
-          <h1 class="mb-2 mb-lg-0">Aegis Graham Bell Award - National Recognition</h1>
-          <nav class="breadcrumbs">
-            <ol>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#services">Achievements</a></li>
-              <li class="current">Aegis Graham Bell </li>
-            </ol>
-          </nav>
-        </div>
+      <div class="container">
+        <div class="d-lg-flex justify-content-between align-items-center">
 
-        <!-- Top-right action toolbar -->
-         <!-- MEDIA COVERAGE: action-toolbar (insert next to certificate buttons) -->
+          <!-- Left: title + breadcrumb -->
+          <div>
+            <h1 class="mb-1">Aegis Graham Bell Award</h1>
+            <p class="mb-2 text-white-50" style="font-size:0.95rem;">National Recognition — Government of India</p>
+            <nav class="breadcrumbs">
+              <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Achievements</a></li>
+                <li class="current">Aegis Graham Bell Award</li>
+              </ol>
+            </nav>
+          </div>
 
+          <!-- Right: action buttons (desktop) -->
+          <div class="page-title-actions">
+            <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalMedia">
+              <i class="bi bi-newspaper me-1"></i> View Media Coverage
+            </button>
+            <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalCertificate">
+              <i class="bi bi-award me-1"></i> View Certificate
+            </button>
+            <a href="assets/docs/Aegis_GrahamBell_Certificate.pdf" class="btn btn-light btn-sm" download>
+              <i class="bi bi-download me-1"></i> Download Certificate
+            </a>
+          </div>
 
-
-        <div class="action-toolbar">
-          <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalMedia" id="openMediaBtn">
-  <i class="bi bi-newspaper me-1"></i> View media coverage
-</button>
-          <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalCertificate" id="openCertBtn">
-            <i class="bi bi-award me-1"></i> View certificate / credential
-          </button>
-          <a href="assets/docs/Aegis_GrahamBell_Certificate.pdf" class="btn btn-light btn-sm" download>
-            <i class="bi bi-download me-1"></i> Download certificate
-          </a>
         </div>
       </div>
-    </div>
+    </div><!-- /Page Title -->
 
-    <!-- Achievement Details -->
+    <!-- ══════════════════ ACHIEVEMENT DETAILS ══════════════════ -->
     <section id="achievement-details" class="service-details section">
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
-          <!-- Slider column -->
+
+          <!-- ── LEFT: Image Slider ── -->
           <div class="col-lg-8">
-            <div class="achievement-hero">
-              <div class="swiper achievement-swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="assets/img/4567.jpeg" alt="Aegis Graham Bell - award" class="achievement-slide" />
+            <div class="swiper achievement-swiper" style="border-radius:12px; overflow:hidden;">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/img/4567.jpeg" alt="Aegis Graham Bell Award ceremony" class="achievement-slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/aegis.jpeg" alt="Aegis event presentation" class="achievement-slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/aegis1.jpeg" alt="Aegis award ceremony" class="achievement-slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/aegis2.jpeg" alt="Aegis award ceremony" class="achievement-slide" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+
+            <!-- Context below slider -->
+            <div class="mt-4">
+              <h4 class="mb-3">About the Award</h4>
+              <p>
+                The <strong>Aegis Graham Bell Award</strong> is one of India's most prestigious national honours for technological innovation, presented annually by the Ministry of Electronics &amp; Information Technology, Government of India. It recognises groundbreaking contributions in AI, data science, and digital technology that demonstrate high social impact and technical excellence.
+              </p>
+              <p>
+                Sumit was recognised for <strong>Saheli</strong> — India's first AI-powered women's safety platform — which was selected from <strong>1,200+ national nominations</strong> for its combination of social relevance, technical originality, and real-world deployment. The award was personally presented by <strong>Shri Jayant Chaudhary, Minister of State for Electronics &amp; IT</strong>.
+              </p>
+              <p>
+                Saheli integrates multimodal distress detection (voice + text), privacy-preserving real-time location sharing, and a sub-3-second emergency alert pipeline. It is live and publicly accessible, and supported by a Government of India (AICTE) research grant.
+              </p>
+            </div>
+          </div><!-- /col-lg-8 -->
+
+          <!-- ── RIGHT: Info Sidebar ── -->
+          <div class="col-lg-4">
+            <div class="achievement-info-card">
+
+              <!-- Award overview card -->
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="flex-shrink-0" style="width:48px; height:48px; background:#eef5ff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                      <i class="bi bi-trophy-fill text-primary fs-4"></i>
+                    </div>
+                    <div>
+                      <h5 class="mb-0">Aegis Graham Bell Award</h5>
+                      <small class="text-muted">National — Government of India</small>
+                    </div>
                   </div>
-                  <div class="swiper-slide">
-                    <img src="assets/img/aegis.jpeg" alt="Aegis event - presentation" class="achievement-slide" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="assets/img/aegis1.jpeg" alt="Aegis award ceremony" class="achievement-slide" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="assets/img/aegis2.jpeg" alt="Aegis award ceremony" class="achievement-slide" />
+
+                  <hr class="my-3">
+
+                  <ul class="list-unstyled meta-list mb-0">
+                    <li>
+                      <i class="bi bi-calendar-event text-primary me-2"></i>
+                      <strong>Year: </strong>  2025
+                    </li>
+                    <li>
+                      <i class="bi bi-person-badge text-primary me-2"></i>
+                      <strong>Presented by:</strong>  Shri Jayant Chaudhary, Union Minister
+                    </li>
+                    <li>
+                      <i class="bi bi-lightbulb text-primary me-2"></i>
+                      <strong>For project:</strong> Saheli — AI Women's Safety Platform
+                    </li>
+                    <li>
+                      <i class="bi bi-people text-primary me-2"></i>
+                      <strong>Selection pool:</strong> 1,200+ national nominations
+                    </li>
+                    <li>
+                      <i class="bi bi-building text-primary me-2"></i>
+                      <strong>Awarding body:</strong> Ministry of Electronics &amp; IT, Govt. of India
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Highlights card -->
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                  <h6 class="card-title mb-3"><i class="bi bi-star-fill text-warning me-2"></i>Key Highlights</h6>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> National Recognition</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Govt. of India Award</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> 1200+ Nominations</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> Social Impact AI</span>
+                    <span class="highlight-badge"><i class="bi bi-check-circle-fill"></i> AICTE Funded</span>
                   </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
               </div>
-            </div>
-          </div>
 
-          <!-- Info column -->
-          <div class="col-lg-4">
-            <div class="achievement-info">
-              <h3>Aegis Graham Bell Award by Government of India</h3>
-              <p class="fs-6 text-justify">
-                Honoured with the National Aegis Graham Bell Award for Innovation in AI & Data Science, presented by Shri Jayant Chaudhary, Minister of State for Electronics & IT. Recognized for the Saheli project — India’s first AI-powered women’s safety platform — selected from 1,200+ national nominations for social impact and technical originality.
-              </p>
-
-              <h5 class="mt-3">Highlights</h5>
-              <ul>
-                <li class="meta-list"><strong>Presenter:</strong> Shri Jayant Chaudhary, MoS Electronics & IT</li>
-                <li class="meta-list"><strong>Project:</strong> Saheli — AI-based women’s safety platform</li>
-                <li class="meta-list"><strong>Selection:</strong> Top national innovations (1,200+ nominations)</li>
-              </ul>
-
-              <h5 class="mt-3">Impact</h5>
-              <p class="mb-0">The award showcases the social and technical importance of Saheli and underlines readiness for policy-level adoption and large-scale deployments for public safety.</p>
-
-              <div class="mt-4 d-grid gap-2">
-                
-                <a href="index.html#services" class="btn btn-outline-primary">Back to Achievements</a>
+              <!-- Impact card -->
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                  <h6 class="card-title mb-2"><i class="bi bi-graph-up-arrow text-primary me-2"></i>Impact</h6>
+                  <p class="mb-0" style="font-size:0.92rem;">
+                    This award underscores the social and technical significance of Saheli and signals readiness for policy-level adoption and large-scale deployments for public safety across India.
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Floating action buttons -->
+              <!-- Action buttons -->
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMedia">
+                  <i class="bi bi-newspaper me-1"></i> View Media Coverage
+                </button>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalCertificate">
+                  <i class="bi bi-award me-1"></i> View Certificate
+                </button>
+                <a href="assets/docs/Aegis_GrahamBell_Certificate.pdf" class="btn btn-outline-secondary" download>
+                  <i class="bi bi-download me-1"></i> Download Certificate
+                </a>
+                <a href="index.html#services" class="btn btn-light">
+                  <i class="bi bi-arrow-left me-1"></i> Back to Achievements
+                </a>
+              </div>
+
+            </div>
+          </div><!-- /col-lg-4 -->
+
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </section><!-- /Achievement Details -->
+
+    <!-- Floating actions (mobile only — shown via CSS) -->
     <div class="floating-actions">
-      <!-- MEDIA COVERAGE: floating actions (insert into .floating-actions) -->
-<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMedia"><i class="bi bi-newspaper me-1"></i> View media coverage</button>
-
-
-      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCertificate"><i class="bi bi-award me-1"></i> View certificate</button>
-      <a href="assets/docs/Aegis_GrahamBell_Certificate.pdf" class="btn btn-success" download><i class="bi bi-download me-1"></i> Download certificate</a>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMedia">
+        <i class="bi bi-newspaper me-1"></i> View Media Coverage
+      </button>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCertificate">
+        <i class="bi bi-award me-1"></i> View Certificate
+      </button>
+      <a href="assets/docs/Aegis_GrahamBell_Certificate.pdf" class="btn btn-success" download>
+        <i class="bi bi-download me-1"></i> Download Certificate
+      </a>
     </div>
-  </main>
 
-  <!-- Certificate Modal (lazy load) -->
+  </main><!-- /main -->
+
+  <!-- ══════════════════ CERTIFICATE MODAL ══════════════════ -->
   <div class="modal fade" id="modalCertificate" tabindex="-1" aria-labelledby="modalCertificateLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalCertificateLabel">Certificate — Aegis Graham Bell Award</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
 
-        <div class="modal-body position-relative p-3">
-          <div class="cert-preview-toolbar">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCertificateLabel">
+            <i class="bi bi-award me-2 text-primary"></i>Certificate — Aegis Graham Bell Award
+          </h5>
+          <div class="ms-auto me-2">
             <a id="certDownloadTop" href="assets/docs/Aegis_GrahamBell_Certificate.pdf" class="btn btn-sm btn-primary" download>
               <i class="bi bi-download me-1"></i> Download
             </a>
           </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
 
-          <div style="min-height:60vh;">
+        <div class="modal-body p-3">
+          <div style="min-height: 60vh;">
             <iframe id="certPreviewFrame" class="cert-iframe" data-src="assets/docs/Aegis_GrahamBell_Certificate.pdf#view=FitH" title="Certificate preview"></iframe>
           </div>
         </div>
 
         <div class="modal-footer">
-          <a href="#" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</a>
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
           <a id="certDownloadFooter" href="assets/docs/Aegis_GrahamBell_Certificate.pdf" class="btn btn-primary" download>
-            <i class="bi bi-download me-1"></i> Download certificate
+            <i class="bi bi-download me-1"></i> Download Certificate
           </a>
         </div>
+
       </div>
     </div>
-  </div>
+  </div><!-- /Certificate Modal -->
 
-  <!-- Footer -->
+  <!-- ══════════════════ MEDIA COVERAGE MODAL ══════════════════ -->
+  <div class="modal fade" id="modalMedia" tabindex="-1" aria-labelledby="modalMediaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMediaLabel">
+            <i class="bi bi-newspaper me-2 text-primary"></i>Media Coverage — Aegis Graham Bell Award
+          </h5>
+          <div class="ms-auto me-2">
+            <a id="mediaDownloadTop" href="assets/docs/news.pdf" class="btn btn-sm btn-primary" download>
+              <i class="bi bi-download me-1"></i> Download
+            </a>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body p-3">
+          <div style="min-height: 60vh;">
+            <iframe id="mediaPreviewFrame" class="cert-iframe" data-src="assets/docs/news.pdf#view=FitH" title="Media coverage preview"></iframe>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          <a id="mediaDownloadFooter" href="assets/docs/news.pdf" class="btn btn-primary" download>
+            <i class="bi bi-download me-1"></i> Download Media Coverage
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div><!-- /Media Modal -->
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sumit Kolpe</strong> <span>All Rights Reserved</span></p>
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sumit Kolpe Portfolio</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits text-center mt-2">
-        Designed by <a href="#">SK</a>
+        Designed by Sumit
       </div>
     </div>
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Initialize Swiper for the achievement slider
+
+      // ── AOS init ──
+      if (typeof AOS !== 'undefined') {
+        AOS.init({ duration: 600, easing: 'ease-in-out', once: true, mirror: false });
+      }
+
+      // ── Swiper ──
       if (typeof Swiper !== 'undefined') {
         new Swiper('.achievement-swiper', {
           loop: true,
@@ -249,81 +435,46 @@
         });
       }
 
-      // Certificate modal: lazy load PDF into iframe on show, clear on hide
-      const certModal = document.getElementById('modalCertificate');
-      const certFrame = document.getElementById('certPreviewFrame');
-      const certDownloadTop = document.getElementById('certDownloadTop');
-      const certDownloadFooter = document.getElementById('certDownloadFooter');
+      // ── Certificate modal: lazy-load PDF ──
+      const certModal  = document.getElementById('modalCertificate');
+      const certFrame  = document.getElementById('certPreviewFrame');
+      const certDlTop  = document.getElementById('certDownloadTop');
+      const certDlFoot = document.getElementById('certDownloadFooter');
 
       if (certModal && certFrame) {
-        const dataSrc = certFrame.getAttribute('data-src');
-
+        const src = certFrame.getAttribute('data-src');
         certModal.addEventListener('show.bs.modal', function () {
-          certFrame.src = dataSrc;
-          const downloadHref = dataSrc.split('#')[0];
-          certDownloadTop.href = downloadHref;
-          certDownloadFooter.href = downloadHref;
+          if (certFrame.src !== src) certFrame.src = src;
+          const dl = src.split('#')[0];
+          if (certDlTop)  certDlTop.href  = dl;
+          if (certDlFoot) certDlFoot.href = dl;
         });
-
         certModal.addEventListener('hidden.bs.modal', function () {
           certFrame.src = '';
         });
       }
 
-      // Media modal lazy-load logic (put inside DOMContentLoaded where certificate logic is)
-const mediaModal = document.getElementById('modalMedia');
-const mediaFrame = document.getElementById('mediaPreviewFrame');
-const mediaDownloadTop = document.getElementById('mediaDownloadTop');
-const mediaDownloadFooter = document.getElementById('mediaDownloadFooter');
+      // ── Media modal: lazy-load PDF ──
+      const mediaModal  = document.getElementById('modalMedia');
+      const mediaFrame  = document.getElementById('mediaPreviewFrame');
+      const mediaDlTop  = document.getElementById('mediaDownloadTop');
+      const mediaDlFoot = document.getElementById('mediaDownloadFooter');
 
-if (mediaModal && mediaFrame) {
-  const mediaSrc = mediaFrame.getAttribute('data-src');
-
-  mediaModal.addEventListener('show.bs.modal', function () {
-    mediaFrame.src = mediaSrc;
-    const downloadHref = mediaSrc.split('#')[0];
-    mediaDownloadTop.href = downloadHref;
-    mediaDownloadFooter.href = downloadHref;
-  });
-
-  mediaModal.addEventListener('hidden.bs.modal', function () {
-    mediaFrame.src = '';
-  });
-}
+      if (mediaModal && mediaFrame) {
+        const src = mediaFrame.getAttribute('data-src');
+        mediaModal.addEventListener('show.bs.modal', function () {
+          if (mediaFrame.src !== src) mediaFrame.src = src;
+          const dl = src.split('#')[0];
+          if (mediaDlTop)  mediaDlTop.href  = dl;
+          if (mediaDlFoot) mediaDlFoot.href = dl;
+        });
+        mediaModal.addEventListener('hidden.bs.modal', function () {
+          mediaFrame.src = '';
+        });
+      }
 
     });
   </script>
-
-  <!-- Media Coverage Modal (lazy load) -->
-<div class="modal fade" id="modalMedia" tabindex="-1" aria-labelledby="modalMediaLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalMediaLabel">Media Coverage — Aegis Graham Bell Award</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body position-relative p-3">
-        <div class="cert-preview-toolbar">
-          <a id="mediaDownloadTop" href="assets/docs/news.pdf" class="btn btn-sm btn-primary" download>
-            <i class="bi bi-download me-1"></i> Download
-          </a>
-        </div>
-
-        <div style="min-height:60vh;">
-          <iframe id="mediaPreviewFrame" class="cert-iframe" data-src="assets/docs/news.pdf#view=FitH" title="Media coverage preview"></iframe>
-        </div>
-      </div>
-
-      <div class="modal-footer">
-        <a href="#" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</a>
-        <a id="mediaDownloadFooter" href="assets/docs/news.pdf" class="btn btn-primary" download>
-          <i class="bi bi-download me-1"></i> Download media coverage
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 
 </body>
 </html>
